@@ -30,6 +30,12 @@ button {
   font-size: 2.75rem;
 }
 
+.header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
 .restaurantsMainCard {
   background-color: white;
   border-radius: 1.25rem;
