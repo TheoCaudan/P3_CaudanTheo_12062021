@@ -1,3 +1,7 @@
+.uselessTitle {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: "roboto", Arial, Helvetica, sans-serif;
