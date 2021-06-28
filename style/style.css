@@ -6,6 +6,10 @@ footer {
   padding: 20px;
   background-color: #353535;
 }
+footer a:hover {
+  -webkit-animation: shake 600ms infinite;
+  animation: shake 600ms infinite;
+}
 
 body {
   margin: 0;
