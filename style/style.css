@@ -1,16 +1,3 @@
-footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  display: inline-block;
-  padding: 20px;
-  background-color: #353535;
-}
-footer a:hover {
-  -webkit-animation: shake 600ms infinite;
-  animation: shake 600ms infinite;
-}
-
 body {
   margin: 0;
   font-family: "roboto", Arial, Helvetica, sans-serif;
