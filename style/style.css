@@ -1,5 +1,19 @@
-.body {
-  font-size: small;
+body {
+  margin: 0;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body a {
+  text-decoration: none;
+}
+body h1 {
+  font-size: 35px;
+}
+body h2 {
+  font-size: 23px;
+}
+body li {
+  list-style: none;
 }
 
 body {
