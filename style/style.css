@@ -33,6 +33,7 @@ button {
   padding: 6px;
   box-sizing: border-box;
   height: 250px;
+  width: 335px;
   transition-duration: 0.1s;
   cursor: pointer;
 }
