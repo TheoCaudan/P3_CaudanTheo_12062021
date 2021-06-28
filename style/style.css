@@ -55,6 +55,10 @@ button {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
 
+.restaurantsMainCardTitle, .restaurantsMainCardDesc {
+  font-size: medium;
+}
+
 .uselessTitle {
   display: none;
 }
