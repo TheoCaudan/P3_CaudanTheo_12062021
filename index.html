@@ -12,22 +12,20 @@
     <title>Ohmyfood - Accueil</title>
 </head>
 <body>
-    <header>
-        <section class="logo">
-            <h6 class="uselessTitle">This title is useless</h6> <!--UselessTitle for W3C Validator-->
-            <p>
-                <img title="logoOhmyFood" src="img/logo/logo.svg" alt="Ohmyfood">
-            </p>
-        </section>
-        <section class="search">
-            <h6 class="uselessTitle">This title is useless</h6> <!--UselessTitle for W3C Validator-->
-            <form class="searchForm">
-                <span class="searchFormWrapicon">
-                    <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
-                </span>
-                <input class="searchFormSearchinput" type="search" placeholder="Paris, Belleville">
-            </form>
-        </section>
+    <header class="header">
+        <div>
+            <img title="logoOhmyFood" src="img/logo/logo.svg" alt="Ohmyfood">
+        </div>
+    </header>
+    <main>
+        <form class="search">
+            <div class="searchIcon">
+                    <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="searchText">
+                <p>Paris, Belleville</p>
+            </div>
+        </form>
         <section class="explore">
             <h1 class="exploreTitle">Réservez le menu qui vous convient</h1>
             <p class="exploreText">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
@@ -35,8 +33,6 @@
                 Explorer nos restaurants
             </button>
         </section>
-    </header>
-    <main>
         <section class="explanations">
             <h1 class=explanationsTitle>Fonctionnement</h1>
             <div class="explanationsStep1Wrapper">

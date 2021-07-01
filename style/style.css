@@ -2,31 +2,13 @@
   display: none;
 }
 
-body {
-  margin: 0;
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-}
-body a {
-  text-decoration: none;
-}
-body h1 {
-  font-size: 35px;
-}
-body h2 {
-  font-size: 23px;
-}
-body li {
-  list-style: none;
-}
-
 .restaurants {
   display: grid;
-  grid-template: 1;
+  grid-template: 2/2;
 }
 .restaurantsTitle {
   display: block;
-  grid-area: -1;
+  grid-area: -1/1;
   padding-left: 20px;
 }
 .restaurantsMain {
@@ -46,19 +28,19 @@ body li {
 }
 .restaurantsMainCard1 {
   display: block;
-  grid-area: 1;
+  grid-area: 1/1;
 }
 .restaurantsMainCard2 {
   display: block;
-  grid-area: 0.5;
+  grid-area: 1/2;
 }
 .restaurantsMainCard3 {
   display: block;
-  grid-area: 2;
+  grid-area: 2/1;
 }
 .restaurantsMainCard4 {
   display: block;
-  grid-area: 1;
+  grid-area: 2/2;
 }
 .restaurantsMainCardFigure {
   object-fit: contain;

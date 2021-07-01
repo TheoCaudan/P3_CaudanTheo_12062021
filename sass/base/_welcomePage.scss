@@ -1,9 +1,9 @@
 .restaurants{
     display: grid;
-    grid-template: $grid-square2/$grid-square2;
+    grid-template: 2/2;
     &Title{
         display: block;
-        grid-area: $grid-title;
+        grid-area: -1/1;
         padding-left: 20px;       
     }
     &Main{
@@ -21,19 +21,19 @@
             cursor: pointer;
             &1{
                 display: block;
-                grid-area: $grid-pos1;
+                grid-area: 1/1;
             }
             &2{
                 display: block;
-                grid-area: $grid-pos2;
+                grid-area: 1/2;
             }
             &3{
                 display: block;
-                grid-area: $grid-pos3;
+                grid-area: 2/1;
             }
             &4{
                 display: block;
-                grid-area: $grid-pos4;
+                grid-area: 2/2;
             }
             &Figure{
                 object-fit: contain;
