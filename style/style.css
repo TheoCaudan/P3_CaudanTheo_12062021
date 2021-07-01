@@ -1,58 +1,17 @@
-.uselessTitle {
-  display: none;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 8 | @import ".base/welcomePage";
+ *   |         ^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\main.scss 8:9  root stylesheet */
 
-body {
-  margin: 0;
-  font-family: "roboto", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 8 \2502  @import \".base/welcomePage\";\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 8:9  root stylesheet";
 }
-body a {
-  text-decoration: none;
-}
-body h1 {
-  font-size: 35px;
-}
-body h2 {
-  font-size: 23px;
-}
-body li {
-  list-style: none;
-}
-
-.header .logo, .header .search {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
-}
-
-.restaurantsMainCard {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002E;
-  padding: 6px;
-  box-sizing: border-box;
-  height: 250px;
-  width: 335px;
-  transition-duration: 0.1s;
-  cursor: pointer;
-}
-
-.restaurantsMainCardFigure {
-  height: 7rem;
-  width: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 1rem 1rem 0 0;
-  object-fit: cover;
-}
-
-.restaurantsMainCardTitle {
-  margin: 0.25rem 0.75rem 0 0.75rem;
-}
-
-.restaurantsMainCardTitle, .restaurantsMainCardDesc {
-  font-size: medium;
-}
-
-/*# sourceMappingURL=style.css.map */

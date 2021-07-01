@@ -1,0 +1,23 @@
+.restaurants{
+    display: grid;
+    grid-template: $grid-square2/$grid-square2;
+    &Title{
+        grid-area: $grid-title;
+        padding-left: 20px;       
+    }
+    &Main{
+        width: 100%;
+        max-width: 1440px;
+        &Card{
+            border-radius: 1px;
+            max-width: 25%;
+            max-height: 25%;
+        }
+    }
+    &Main a{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
