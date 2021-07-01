@@ -35,6 +35,7 @@ body li {
   height: 500px;
 }
 .restaurantsMainCard {
+  max-width: 25%;
   border-radius: 1.25rem;
   background-color: white;
   box-shadow: 0 0 5px #0000002E;
