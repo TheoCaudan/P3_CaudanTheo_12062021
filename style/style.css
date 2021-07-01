@@ -2,52 +2,63 @@
   display: none;
 }
 
-.restaurants {
-  display: grid;
-  grid-template: 2/2;
-}
 .restaurantsTitle {
-  display: block;
-  grid-area: -1/1;
   padding-left: 20px;
 }
 .restaurantsMain {
+  display: grid;
+  height: 500px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "pos1 pos2" "pos3 pos4";
   width: 100%;
   max-width: 1440px;
-  height: 500px;
 }
 .restaurantsMainCard {
-  max-width: 25%;
   border-radius: 1.25rem;
   background-color: white;
-  box-shadow: 0 0 5px #0000002E;
+  box-shadow: 0 0 14px #0000002E;
   padding: 0px;
   box-sizing: border-box;
   transition-duration: 0.1s;
   cursor: pointer;
 }
 .restaurantsMainCard1 {
-  display: block;
-  grid-area: 1/1;
+  height: 230px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: auto;
+  grid-area: pos1;
 }
 .restaurantsMainCard2 {
-  display: block;
-  grid-area: 1/2;
+  height: 230px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: auto;
+  grid-area: pos2;
 }
 .restaurantsMainCard3 {
-  display: block;
-  grid-area: 2/1;
+  height: 230px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: auto;
+  grid-area: pos3;
 }
 .restaurantsMainCard4 {
-  display: block;
-  grid-area: 2/2;
+  height: 230px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: auto;
+  grid-area: pos4;
 }
 .restaurantsMainCardFigure {
   object-fit: contain;
-  max-height: 70%;
   padding-top: 0;
   margin-top: 0;
   border: none;
+}
+.restaurantsMainCardFigure img {
+  height: 100%;
 }
 .restaurantsMain a {
   width: 100%;
