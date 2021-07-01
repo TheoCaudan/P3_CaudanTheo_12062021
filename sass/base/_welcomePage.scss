@@ -2,6 +2,7 @@
     display: grid;
     grid-template: $grid-square2/$grid-square2;
     &Title{
+        display: block;
         grid-area: $grid-title;
         padding-left: 20px;       
     }
@@ -19,10 +20,22 @@
             box-sizing: border-box;
             transition-duration: 0.1s;
             cursor: pointer;
-            &1{ grid-area: $grid-pos1 }
-            &2 { grid-area: $grid-pos2 }
-            &3 { grid-area: $grid-pos3 }
-            &4 { grid-area: $grid-pos4 }
+            &1{
+                display: block;
+                grid-area: $grid-pos1;
+            }
+            &2{
+                display: block;
+                grid-area: $grid-pos2;
+            }
+            &3{
+                display: block;
+                grid-area: $grid-pos3;
+            }
+            &4{
+                display: block;
+                grid-area: $grid-pos4;
+            }
             &Figure{
                 object-fit: contain;
                 max-height: 70%;

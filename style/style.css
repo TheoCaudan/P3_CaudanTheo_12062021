@@ -25,6 +25,7 @@ body li {
   grid-template: 1;
 }
 .restaurantsTitle {
+  display: block;
   grid-area: -1;
   padding-left: 20px;
 }
@@ -45,15 +46,19 @@ body li {
   cursor: pointer;
 }
 .restaurantsMainCard1 {
+  display: block;
   grid-area: 1;
 }
 .restaurantsMainCard2 {
+  display: block;
   grid-area: 0.5;
 }
 .restaurantsMainCard3 {
+  display: block;
   grid-area: 2;
 }
 .restaurantsMainCard4 {
+  display: block;
   grid-area: 1;
 }
 .restaurantsMainCardFigure {
