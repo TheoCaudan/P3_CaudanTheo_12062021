@@ -44,6 +44,18 @@ body li {
   transition-duration: 0.1s;
   cursor: pointer;
 }
+.restaurantsMainCard1 {
+  grid-area: 1;
+}
+.restaurantsMainCard2 {
+  grid-area: 0.5;
+}
+.restaurantsMainCard3 {
+  grid-area: 2;
+}
+.restaurantsMainCard4 {
+  grid-area: 1;
+}
 .restaurantsMainCardFigure {
   object-fit: contain;
   max-height: 70%;
