@@ -33,9 +33,15 @@ body li {
   max-width: 1440px;
 }
 .restaurantsMainCard {
-  border-radius: 1px;
+  border-radius: 1.25rem;
   max-width: 25%;
   max-height: 25%;
+  background-color: white;
+  box-shadow: 0 0 5px #0000002E;
+  padding: 0px;
+  box-sizing: border-box;
+  transition-duration: 0.1s;
+  cursor: pointer;
 }
 .restaurantsMainCardFigure {
   object-fit: contain;
@@ -53,18 +59,6 @@ body li {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-}
-
-.restaurantsMainCard {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002E;
-  padding: 6px;
-  box-sizing: border-box;
-  height: 250px;
-  width: 335px;
-  transition-duration: 0.1s;
-  cursor: pointer;
 }
 
 .restaurantsMainCardFigure {
