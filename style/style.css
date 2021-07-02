@@ -2,10 +2,19 @@
   display: none;
 }
 
-body {
+.body {
   display: block;
   max-width: 1440px;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.body > a {
+  text-decoration: none;
+  font-family: "roboto";
+}
+.body > * {
+  display: block;
   margin-right: auto;
   margin-left: auto;
 }
@@ -76,7 +85,7 @@ body {
 .header .logo, .header .search {
   margin-right: auto;
   margin-left: auto;
-  max-width: 100%;
+  max-width: 1440px;
 }
 
 .restaurantsMainCardFigure {
