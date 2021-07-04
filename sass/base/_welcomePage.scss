@@ -1,10 +1,16 @@
+@import "../utils/variables";
 .explore{
     background-color: $colour-xpln-bkgnd;
+    min-height: 240px;
+    &Title{ margin-bottom: 0 }
+    &Text{ margin-bottom: 20px }
     &Title, &Text{
         margin-left: auto;
         margin-right: auto;
         max-width: 280px;
         text-align: center;
+        padding-top: 20px;
+        margin-top: 0;
     }
     &Button{
         width: 230px;
