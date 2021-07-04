@@ -1,4 +1,5 @@
 .explore{
+    background-color: $colour-xpln-bkgnd;
     &Title, &Text{
         margin-left: auto;
         margin-right: auto;
@@ -15,6 +16,33 @@
         background-color: $colour-btn-drk;
         border-radius: 1.5em;
         border-width: 0;
+    }
+}
+.explanations{
+    &Title{ 
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 280px;
+    }
+    &Step1Wrapper, &Step2Wrapper, &Step3Wrapper{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+    }
+    &Step1, &Step2, &Step3{
+        display: block;
+        max-width: 400px;
+        max-height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $colour-xpln-bkgnd;
+        margin-bottom: 20px;
+        &Step1Number, &Step2Number, &Step3Number{
+            background-color: $colour-nmbrs;
+            border-radius: 1px;
+            color: $colour-white;
+        }
     }
 }
 .restaurants{

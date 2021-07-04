@@ -26,6 +26,9 @@
   font-family: "roboto";
 }
 
+.explore {
+  background-color: #e6e0e0;
+}
 .exploreTitle, .exploreText {
   margin-left: auto;
   margin-right: auto;
@@ -42,6 +45,32 @@
   background-color: #ae5fdb;
   border-radius: 1.5em;
   border-width: 0;
+}
+
+.explanationsTitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+}
+.explanationsStep1Wrapper, .explanationsStep2Wrapper, .explanationsStep3Wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.explanationsStep1, .explanationsStep2, .explanationsStep3 {
+  display: block;
+  max-width: 400px;
+  max-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e6e0e0;
+  margin-bottom: 20px;
+}
+.explanationsStep1Step1Number, .explanationsStep1Step2Number, .explanationsStep1Step3Number, .explanationsStep2Step1Number, .explanationsStep2Step2Number, .explanationsStep2Step3Number, .explanationsStep3Step1Number, .explanationsStep3Step2Number, .explanationsStep3Step3Number {
+  background-color: #9356dc;
+  border-radius: 1px;
+  color: #fff;
 }
 
 .restaurantsTitle {
