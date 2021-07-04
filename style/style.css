@@ -26,6 +26,24 @@
   font-family: "roboto";
 }
 
+.exploreTitle, .exploreText {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  text-align: center;
+}
+.exploreButton {
+  width: 230px;
+  height: 55px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 220px;
+  display: block;
+  background-color: #ae5fdb;
+  border-radius: 1.5em;
+  border-width: 0;
+}
+
 .restaurantsTitle {
   padding-left: 20px;
 }
