@@ -82,7 +82,9 @@
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas: "pos1" "pos2" "pos3" "pos4";
-        width: 100%;
+        width: 335px;
+        margin-right: auto;
+        margin-left: auto;
         max-width: 1440px;
         &Card{
             border-radius: 1.25rem;
@@ -92,34 +94,27 @@
             box-sizing: border-box;
             transition-duration: 0.1s;
             cursor: pointer;
-            &1{
+            &Title{
+                text-decoration: none;
+                font-family: "roboto";
+                font-weight: bold;
+                font-size: large;
+                padding-left: 10px;
+            }
+            &Desc{
+                text-decoration: none;
+                font-family: "roboto";
+                font-size: medium;
+                padding-left: 10px;
+            }
+            &1, &2, &3, &4{
                 height: 230px; 
                 margin-bottom: 20px;
-                margin-left: 20px;
-                margin-right: auto;
-                grid-area: pos1;
             }
-            &2{
-                height: 230px; 
-                margin-bottom: 20px;
-                margin-left: 20px;
-                margin-right: auto;
-                grid-area: pos2;
-            }
-            &3{
-                height: 230px; 
-                margin-bottom: 20px;
-                margin-left: 20px;
-                margin-right: auto;
-                grid-area: pos3;
-            }
-            &4{
-                height: 230px; 
-                margin-bottom: 20px;
-                margin-left: 20px;
-                margin-right: auto;
-                grid-area: pos4;
-            }
+            &1{ grid-area: pos1 }
+            &2{ grid-area: pos2 }
+            &3{ grid-area: pos3 }
+            &4{ grid-area: pos4 }
             &Figure{
                 object-fit: contain;
                 padding-top: 0;

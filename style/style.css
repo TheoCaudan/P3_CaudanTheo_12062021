@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
-.uselessTitle {
-  display: none;
-}
-
 .body {
   display: block;
   max-width: 1440px;
@@ -10,14 +6,6 @@
   margin-right: auto;
   margin-left: auto;
   font-family: "roboto";
-}
-.body > a {
-  text-decoration: none;
-}
-.body > * {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .explore {
@@ -106,7 +94,9 @@
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "pos1" "pos2" "pos3" "pos4";
-  width: 100%;
+  width: 335px;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 1440px;
 }
 .restaurantsMainCard {
@@ -118,32 +108,33 @@
   transition-duration: 0.1s;
   cursor: pointer;
 }
-.restaurantsMainCard1 {
+.restaurantsMainCardTitle {
+  text-decoration: none;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: large;
+  padding-left: 10px;
+}
+.restaurantsMainCardDesc {
+  text-decoration: none;
+  font-family: "roboto";
+  font-size: medium;
+  padding-left: 10px;
+}
+.restaurantsMainCard1, .restaurantsMainCard2, .restaurantsMainCard3, .restaurantsMainCard4 {
   height: 230px;
   margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: auto;
+}
+.restaurantsMainCard1 {
   grid-area: pos1;
 }
 .restaurantsMainCard2 {
-  height: 230px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: auto;
   grid-area: pos2;
 }
 .restaurantsMainCard3 {
-  height: 230px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: auto;
   grid-area: pos3;
 }
 .restaurantsMainCard4 {
-  height: 230px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: auto;
   grid-area: pos4;
 }
 .restaurantsMainCardFigure {
@@ -161,16 +152,15 @@
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   background-color: #ffffff;
   margin-bottom: 0;
   margin-top: 0;
   max-height: 50px;
   width: 100px;
+  padding-right: 90px;
 }
 
 .search {
