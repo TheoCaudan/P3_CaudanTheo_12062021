@@ -1,10 +1,26 @@
 @import "../utils/variables";
 .search {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    text-align: center;
+    justify-content: center;
     position: relative;
-    background-color: $colour-location;
+    background: linear-gradient(to bottom, $colour-location-top, 20%, $colour-location-bot);
     max-height: 50px;
+    width: 100%;
+    &Icon {
+      height: 16px;
+      color: black;
+      border: none;
+    }
+    &Text {
+      font-weight: bold;
+      padding-left: 10px;
+      font-size: 16px;
+      font-family: "roboto";
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }

@@ -20,19 +20,8 @@
   margin-left: auto;
 }
 
-.searchText {
-  padding-left: 20px;
-  font-size: x-large;
-  font-family: "roboto";
-  max-height: 50px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .explore {
-  background-color: #e6e0e0;
+  background-color: #fafafa;
   min-height: 240px;
 }
 .exploreTitle {
@@ -56,9 +45,12 @@
   margin-left: auto;
   max-width: 220px;
   display: block;
-  background-color: #ae5fdb;
+  background: linear-gradient(to bottom right, #e471da, #b361db);
   border-radius: 1.5em;
   border-width: 0;
+  color: #fff;
+  font-size: medium;
+  font-family: "roboto";
 }
 
 .explanationsTitle {
@@ -78,7 +70,7 @@
   max-height: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #e6e0e0;
+  background-color: #fafafa;
   margin-bottom: 20px;
 }
 .explanationsStep1Step1Number, .explanationsStep1Step2Number, .explanationsStep1Step3Number, .explanationsStep2Step1Number, .explanationsStep2Step2Number, .explanationsStep2Step3Number, .explanationsStep3Step1Number, .explanationsStep3Step2Number, .explanationsStep3Step3Number {
@@ -159,16 +151,34 @@
   background-color: #ffffff;
   margin-bottom: 0;
   margin-top: 0;
+  max-height: 50px;
+  width: 100px;
 }
 
 .search {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  text-align: center;
+  justify-content: center;
   position: relative;
-  background-color: #eaeaea;
+  background: linear-gradient(to bottom, #d5d5d5, 20%, #f3f3f3);
   max-height: 50px;
+  width: 100%;
+}
+.searchIcon {
+  height: 16px;
+  color: black;
+  border: none;
+}
+.searchText {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: "roboto";
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .restaurantsMainCardFigure {

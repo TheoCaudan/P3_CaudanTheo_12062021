@@ -19,9 +19,12 @@
         margin-left: auto;
         max-width: 220px;
         display: block;
-        background-color: $colour-btn-drk;
+        background: linear-gradient(to bottom right, $colour-btn-clr, $colour-btn-drk);
         border-radius: 1.5em;
         border-width: 0;
+        color: $colour-white;
+        font-size: medium;
+        font-family: "roboto";
     }
 }
 .explanations{
