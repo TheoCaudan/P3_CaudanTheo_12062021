@@ -1,0 +1,23 @@
+@import "../utils/variables";
+.footer{
+    background-color: $colour-footer;
+    &Logo{
+        &Img{
+            max-width: 100px;
+            color: $colour-white;
+        }
+    }
+    &Links{
+        &Coverts, &Hands{
+            color: $colour-white;
+            height: 22px;
+            width: 22px;
+            padding-right: 10px;
+        }
+    }
+    &Links a{
+        text-decoration: none;
+        font-family: "roboto";
+        font-weight: bold;
+    }
+}

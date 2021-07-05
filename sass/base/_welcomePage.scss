@@ -78,10 +78,10 @@
     }
     &Main{
         display: grid;
-        height: 500px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "pos1 pos2" "pos3 pos4";
+        height: 1000px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "pos1" "pos2" "pos3" "pos4";
         width: 100%;
         max-width: 1440px;
         &Card{
