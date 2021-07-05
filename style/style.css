@@ -196,15 +196,30 @@
 }
 
 .header {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "back" "logo";
   margin-left: auto;
   margin-right: auto;
   position: relative;
   background-color: #ffffff;
   margin-bottom: 0;
   margin-top: 0;
-  max-height: 50px;
+  height: 60px;
   width: 100px;
   padding-right: 90px;
+  padding-top: 20px;
+}
+.headerBack {
+  grid-area: back;
+}
+.headerImg {
+  grid-area: logo;
+}
+.headerBack, .headerImg {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search {
