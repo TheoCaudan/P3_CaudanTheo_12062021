@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body, .html {
+  height: 100%;
+}
+
 .body {
   display: block;
   max-width: 1440px;
@@ -6,6 +15,19 @@
   margin-right: auto;
   margin-left: auto;
   font-family: "roboto";
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 60px;
+  width: 100px;
+  padding-right: 90px;
+  padding-top: 10px;
 }
 
 .explore {
@@ -90,7 +112,7 @@
 }
 .restaurantsMain {
   display: grid;
-  height: 1000px;
+  height: 1200px;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "pos1" "pos2" "pos3" "pos4";
@@ -122,7 +144,7 @@
   padding-left: 10px;
 }
 .restaurantsMainCard1, .restaurantsMainCard2, .restaurantsMainCard3, .restaurantsMainCard4 {
-  height: 230px;
+  height: 250px;
   margin-bottom: 20px;
 }
 .restaurantsMainCard1 {
@@ -138,10 +160,12 @@
   grid-area: pos4;
 }
 .restaurantsMainCardFigure {
-  object-fit: contain;
-  padding-top: 0;
-  margin-top: 0;
-  border: none;
+  height: 66%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 }
 .restaurantsMainCardFigure img {
   height: 100%;
@@ -170,7 +194,7 @@
   justify-content: center;
   position: relative;
   background: linear-gradient(to bottom, #d5d5d5, 20%, #f3f3f3);
-  max-height: 50px;
+  height: 50px;
   width: 100%;
 }
 .searchIcon {
@@ -195,6 +219,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  margin-bottom: 0;
 }
 .footerLogoImg {
   padding-top: 20px;
@@ -214,23 +239,6 @@
   color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.restaurantsMainCardFigure {
-  height: 7rem;
-  width: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 1rem 1rem 0 0;
-  object-fit: cover;
-}
-
-.restaurantsMainCardTitle {
-  margin: 0.25rem 0.75rem 0 0.75rem;
-}
-
-.restaurantsMainCardTitle, .restaurantsMainCardDesc {
-  font-size: medium;
 }
 
 /*# sourceMappingURL=style.css.map */
