@@ -199,6 +199,33 @@
   padding-bottom: 0;
 }
 
+.footer {
+  background-color: #353535;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.footerLogoImg {
+  padding-top: 20px;
+  max-width: 100px;
+  filter: invert(1);
+}
+.footerLinksCoverts, .footerLinksHands {
+  color: #fff;
+  height: 22px;
+  width: 22px;
+  padding-right: 10px;
+}
+.footerLinks a {
+  display: block;
+  text-decoration: none;
+  font-family: "roboto";
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .restaurantsMainCardFigure {
   height: 7rem;
   width: 100%;
