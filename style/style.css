@@ -46,7 +46,7 @@
   max-width: 220px;
   display: block;
   background: linear-gradient(to bottom right, #e471da, #b361db);
-  border-radius: 1.5em;
+  border-radius: 1.25em;
   border-width: 0;
   color: #fff;
   font-size: medium;
@@ -54,29 +54,47 @@
 }
 
 .explanationsTitle {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 20px;
   max-width: 280px;
 }
 .explanationsStep1Wrapper, .explanationsStep2Wrapper, .explanationsStep3Wrapper {
   display: flex;
-  flex-direction: row;
   max-width: 100%;
+  position: relative;
 }
 .explanationsStep1, .explanationsStep2, .explanationsStep3 {
-  display: block;
-  max-width: 400px;
+  display: flex;
+  width: 380px;
   max-height: 50px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fafafa;
   margin-bottom: 20px;
+  border-radius: 1.25em;
 }
-.explanationsStep1Step1Number, .explanationsStep1Step2Number, .explanationsStep1Step3Number, .explanationsStep2Step1Number, .explanationsStep2Step2Number, .explanationsStep2Step3Number, .explanationsStep3Step1Number, .explanationsStep3Step2Number, .explanationsStep3Step3Number {
+.explanationsStep1Number, .explanationsStep2Number, .explanationsStep3Number {
+  align-self: flex-start;
   background-color: #9356dc;
-  border-radius: 1px;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  border: 2px solid #9356dc;
   color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+.explanationsStep1Icon, .explanationsStep2Icon, .explanationsStep3Icon {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 22px;
+  width: 22px;
+  color: #7e7e7e;
+  padding-top: 20px;
+}
+.explanationsStep1Text, .explanationsStep2Text, .explanationsStep3Text {
+  align-self: center;
+  padding-left: 50px;
+  width: 220px;
 }
 
 .restaurantsTitle {

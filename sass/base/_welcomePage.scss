@@ -20,7 +20,7 @@
         max-width: 220px;
         display: block;
         background: linear-gradient(to bottom right, $colour-btn-clr, $colour-btn-drk);
-        border-radius: 1.5em;
+        border-radius: 1.25em;
         border-width: 0;
         color: $colour-white;
         font-size: medium;
@@ -29,28 +29,46 @@
 }
 .explanations{
     &Title{ 
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: 20px;
         max-width: 280px;
     }
     &Step1Wrapper, &Step2Wrapper, &Step3Wrapper{
         display: flex;
-        flex-direction: row;
         max-width: 100%;
+        position: relative;
     }
     &Step1, &Step2, &Step3{
-        display: block;
-        max-width: 400px;
+        display: flex;
+        width: 380px;
         max-height: 50px;
         margin-left: auto;
         margin-right: auto;
         background-color: $colour-xpln-bkgnd;
         margin-bottom: 20px;
-        &Step1Number, &Step2Number, &Step3Number{
+        border-radius: 1.25em;
+        &Number{
+            align-self: flex-start;
             background-color: $colour-nmbrs;
-            border-radius: 1px;
+            border-radius: 50%;
+            height: 22px;
+            width: 22px;
+            border: 2px solid $colour-nmbrs;
             color: $colour-white;
+            text-align: center;
+            vertical-align: middle;
+        }
+        &Icon{
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 22px;
+            width: 22px;
+            color: $colour-xpln-icons;
+            padding-top: 20px;
+        }
+        &Text{
+            align-self: center;
+            padding-left: 50px;
+            width: 220px;
         }
     }
 }
