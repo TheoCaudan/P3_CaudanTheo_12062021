@@ -202,6 +202,7 @@
   font-family: "roboto", "sans-serif";
   padding-left: 10px;
   color: #000;
+  text-decoration: none;
 }
 .restaurantsMainCardTitle {
   font-weight: bold;
