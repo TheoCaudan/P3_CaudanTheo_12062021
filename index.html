@@ -38,61 +38,91 @@
             <h1 class=explanationsTitle>Fonctionnement</h1>
             <div class="explanationsStep1Wrapper">
                 <div class="explanationsStep1">
-                    <p class="explanationsStep1Number">1</p>
-                    <i class="fas fa-mobile-alt explanationsStep1Icon"></i>
-                    <p class="explanationsStep1Text">Choisissez un restaurant</p>
+                        <p class="explanationsStep1Number">1</p>
+                        <i class="fas fa-mobile-alt explanationsStep1Icon"></i>
+                        <p class="explanationsStep1Text">Choisissez un restaurant</p>
                 </div>
             </div>
             <div class="explanationsStep2Wrapper">
                 <div class="explanationsStep2">
-                    <p class="explanationsStep2Number">2</p>
-                    <i class="fas fa-list-ul explanationsStep2Icon"></i>
-                    <p class="explanationsStep2Text">Composez votre menu</p>
+                        <p class="explanationsStep2Number">2</p>
+                        <i class="fas fa-list-ul explanationsStep2Icon"></i>
+                        <p class="explanationsStep2Text">Composez votre menu</p>
                 </div>
             </div>
             <div class="explanationsStep3Wrapper">
                 <div class="explanationsStep3">
-                    <p class="explanationsStep3Number">3</p>
-                    <i class="fas fa-store explanationsStep3Icon"></i>
-                    <p class="explanationsStep3Text">Dégustez au restaurant</p>
+                        <p class="explanationsStep3Number">3</p>
+                        <i class="fas fa-store explanationsStep3Icon"></i>
+                        <p class="explanationsStep3Text">Dégustez au restaurant</p>
                 </div>
             </div>
         </section>
         <section class="restaurants">
             <h1 class="restaurantsTitle">Restaurants</h1>
             <div class="restaurantsMain">
-                <a id="laPalettedugout" href="page1.html">
-                    <div class="restaurantsMainCard restaurantsMainCard1">
-                        <img class="restaurantsMainCardFigure" title="La palette du goût" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-                        <h2 class="restaurantsMainCardTitle">La palette du goût</h2>
-                        <p class="restaurantsMainCardDesc">Ménilmontant</p>
-                        <i class="far fa-heart restaurantsMainCardGrade" data-active="false"></i>
-                    </div>
-                </a>
-                <a id="laNoteenchantee" href="page2.html">
-                    <div class="restaurantsMainCard restaurantsMainCard2">
-                       <img class="restaurantsMainCardFigure" title="La note enchantée" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                        <h2 class="restaurantsMainCardTitle">La note enchantée</h2>
-                        <p class="restaurantsMainCardDesc">Charonne</p>
-                        <i class="far fa-heart restaurantsMainCardGrade" data-active="false"></i>
-                    </div>
-                </a>
-                <a id="aLafrancaise" href="page3.html">
-                    <div class="restaurantsMainCard restaurantsMainCard3">
-                        <img class="restaurantsMainCardFigure" title="À la française" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
-                        <h2 class="restaurantsMainCardTitle">À la française</h2>
-                        <p class="restaurantsMainCardDesc">Cité Rouge</p>
-                        <i class="far fa-heart restaurantsMainCardGrade" data-active="false"></i>
-                    </div>
-                </a>
-                <a id="leDelicedessens" href="page4.html">
-                    <div class="restaurantsMainCard restaurantsMainCard4">
-                        <img class="restaurantsMainCardFigure" title="Le délice des sens" src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-                        <h2 class="restaurantsMainCardTitle">Le délice des sens</h2>
-                        <p class="restaurantsMainCardDesc">Folie-Méricourt</p>
-                        <i class="far fa-heart restaurantsMainCardGrade" data-active="false"></i>                        
-                    </div>
-                </a>
+                <article class="restaurantsMainCard">
+                    <a id="laPalettedugout" href="page1.html">
+                        <div class="restaurantsMainCard1">
+                            <img class="restaurantsMainCardFigure" title="La palette du goût" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                        </div>
+                        <div class="restaurantsMainCardInfos">   
+                            <h2 class="restaurantsMainCardInfosTitle">La palette du goût</h2>
+                            <p class="restaurantsMainCardInfosDesc">Ménilmontant</p>
+                        </div>
+                        <div class="restaurantsMainCardGrade">    
+                            <i class="far fa-heart restaurantsMainCardGradeHeart" data-active="false"></i>
+                        </div>
+                        <div class="restaurantsMainCardNew">
+                            <p>Nouveau</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurantsMainCard">
+                    <a id="laNoteenchantee" href="page2.html">
+                        <div class="restaurantsMainCard2">
+                            <img class="restaurantsMainCardFigure" title="La note enchantée" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                        </div>
+                        <div class="restaurantsMainCardInfos">
+                            <h2 class="restaurantsMainCardInfosTitle">La note enchantée</h2>
+                            <p class="restaurantsMainCardInfosDesc">Charonne</p>
+                        </div>
+                        <div class="restaurantsMainCardGrade">
+                            <i class="far fa-heart restaurantsMainCardGradeHeart" data-active="false"></i>
+                        </div>
+                        <div class="restaurantsMainCardNew">
+                            <p>Nouveau</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurantsMainCard">    
+                    <a id="aLafrancaise" href="page3.html">
+                        <div class="restaurantsMainCard3">
+                            <img class="restaurantsMainCardFigure" title="À la française" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                        </div>
+                        <div class="restaurantsMainCardInfos">
+                            <h2 class="restaurantsMainCardInfosTitle">À la française</h2>
+                            <p class="restaurantsMainCardInfosDesc">Cité Rouge</p>
+                        </div>
+                        <div class="restaurantsMainCardGrade">
+                            <i class="far fa-heart restaurantsMainCardGradeHeart" data-active="false"></i>
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurantsMainCard">
+                    <a id="leDelicedessens" href="page4.html">
+                        <div class="restaurantsMainCard4">
+                            <img class="restaurantsMainCardFigure" title="Le délice des sens" src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                        </div>
+                        <div class="restaurantsMainCardInfos">
+                            <h2 class="restaurantsMainCardInfosTitle">Le délice des sens</h2>
+                            <p class="restaurantsMainCardInfosDesc">Folie-Méricourt</p>
+                        </div>
+                        <div class="restaurantsMainCardGrade">
+                            <i class="far fa-heart restaurantsMainCardGradeHeart" data-active="false"></i>                        
+                        </div>
+                    </a>
+                </article>
             </div>
         </section>
     </main>

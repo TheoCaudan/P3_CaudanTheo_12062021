@@ -39,8 +39,11 @@
   font-family: "roboto";
   margin-bottom: 0;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 2px;
   padding-bottom: 0;
+}
+.searchText:hover {
+  cursor: default;
 }
 
 .footer {
@@ -117,6 +120,10 @@
   font-size: medium;
   font-family: "roboto";
 }
+.exploreButton:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
 
 .main {
   width: 100%;
@@ -183,8 +190,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+.explanationsStep1:hover, .explanationsStep2:hover, .explanationsStep3:hover {
+  cursor: pointer;
+  background-color: #f5edff;
+}
 
+.restaurants {
+  background-color: #fafafa;
+}
 .restaurantsTitle {
+  padding-top: 20px;
   padding-left: 20px;
   margin-bottom: 20px;
 }
@@ -194,7 +209,7 @@
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "pos1" "pos2" "pos3" "pos4";
-  width: 335px;
+  width: 300px;
   margin-right: auto;
   margin-left: auto;
   max-width: 1440px;
@@ -207,32 +222,7 @@
   box-sizing: border-box;
   transition-duration: 0.1s;
   cursor: pointer;
-}
-.restaurantsMainCardTitle, .restaurantsMainCardDesc {
-  padding-top: 10px;
-  text-decoration: none;
-  font-family: "roboto", "sans-serif";
-  padding-left: 10px;
-  color: #000;
-  text-decoration: none;
-}
-.restaurantsMainCardTitle {
-  font-weight: bold;
-  font-size: large;
-}
-.restaurantsMainCardDesc {
-  font-size: medium;
-}
-.restaurantsMainCardGrade {
-  position: relative;
-  left: 300px;
-  bottom: 40px;
-  height: 20px;
-  width: 20px;
-}
-.restaurantsMainCard1, .restaurantsMainCard2, .restaurantsMainCard3, .restaurantsMainCard4 {
   height: 250px;
-  margin-bottom: 20px;
 }
 .restaurantsMainCard1 {
   grid-area: pos1;
@@ -247,7 +237,7 @@
   grid-area: pos4;
 }
 .restaurantsMainCardFigure {
-  height: 66%;
+  height: 165px;
   width: 100%;
   max-height: 100%;
   max-width: 100%;
@@ -257,9 +247,53 @@
 .restaurantsMainCardFigure img {
   height: 100%;
 }
-.restaurantsMain a {
+.restaurantsMainCardInfos {
+  height: 85px;
+}
+.restaurantsMainCardInfosTitle, .restaurantsMainCardInfosDesc {
+  padding-top: 10px;
+  text-decoration: none;
+  font-family: "roboto", "sans-serif";
+  padding-left: 10px;
+  color: #000;
+}
+.restaurantsMainCardInfosTitle {
+  font-weight: bold;
+  font-size: large;
+}
+.restaurantsMainCardInfosDesc {
+  font-size: medium;
+}
+.restaurantsMainCardGrade {
+  position: relative;
+  left: 270px;
+  bottom: 60px;
+  height: 20px;
+  width: 20px;
+}
+.restaurantsMainCardNew {
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: none;
+  position: relative;
+  left: 210px;
+  bottom: 260px;
+}
+.restaurantsMainCardNew > p {
+  text-align: center;
+  text-decoration: none;
+}
+.restaurantsMainCard a {
+  display: block;
+  height: 250px;
   width: 100%;
-  height: 100%;
+}
+.restaurantsMainCard a:hover {
+  filter: brightness(1.25);
 }
 
 .header {
