@@ -118,6 +118,17 @@
   font-family: "roboto";
 }
 
+.main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explanations {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .explanationsTitle {
   padding-left: 20px;
   max-width: 280px;
@@ -130,7 +141,7 @@
 }
 .explanationsStep1, .explanationsStep2, .explanationsStep3 {
   display: flex;
-  width: 380px;
+  max-width: 100%;
   height: 70px;
   margin-left: auto;
   margin-right: auto;
