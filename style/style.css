@@ -385,56 +385,56 @@
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 750px;
+  top: 851px;
 }
 .mainDessertsTitle2::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 1093px;
+  top: 1194px;
 }
 .mainStartersTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 408px;
+  top: 389px;
 }
 .mainDishesTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 750px;
+  top: 730px;
 }
 .mainDessertsTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 1093px;
+  top: 1074px;
 }
 .mainStartersTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 408px;
+  top: 390px;
 }
 .mainDishesTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 750px;
+  top: 732px;
 }
 .mainDessertsTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 1093px;
+  top: 1074px;
 }
 .mainStarters, .mainDishes, .mainDesserts {
   margin-left: auto;
