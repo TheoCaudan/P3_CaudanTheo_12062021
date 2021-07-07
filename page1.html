@@ -14,8 +14,10 @@
 </head>
 <body>
     <header class="header">
-        <div>
-            <a href="index.html"><i class="fas fa-arrow-left headerBack"></i></a>
+        <div class="headerBack">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="headerLogo">
             <img title="logoOhmyFood" src="img/logo/logo.svg" alt="Ohmyfood">
         </div>
     </header>
@@ -24,11 +26,15 @@
             <img class="mainImgTop" title="La palette du goût" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
         </div>
         <section class="mainHeader">
-            <h1 class="mainHeaderTitle">La palette du goût</h1>
-            <i class="fa-heart" data-active="false"></i>
+            <div class="mainHeaderTitle">
+                <h1>La palette du goût</h1>
+            </div>
+            <div class="mainHeaderGrade">
+                <i class="fa-heart" data-active="false"></i>
+            </div>
         </section>
-        <section class="mainStarters">
-            <h2 class="mainStartersTitle">ENTRÉES</h2>
+        <div class="mainStarters">
+            <h2 class="mainStartersTitle1">ENTRÉES</h2>
             <div class="mainStartersCardWrapper">
                 <div class="mainStartersCard">
                     <h3 class="mainStartersCardTitle">Fricassée d'escargot</h3>
@@ -61,9 +67,9 @@
                     <i class="fas fa-check-circle"></i>
                 </div>   
             </div>
-        </section>
-        <section class="mainDishes">
-            <h2 class="mainDishesTitle">PLATS</h2>
+        </div>
+        <div class="mainDishes">
+            <h2 class="mainDishesTitle1">PLATS</h2>
             <div class="mainDishesCardWrapper">
                 <div class="mainDishesCard">
                     <h3 class="mainDishesCardTitle">Filet de boeuf aux herbes</h3>
@@ -96,9 +102,9 @@
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-        </section>
-        <section class="mainDesserts">
-            <h2 class="mainDessertsTitle">DESSERTS</h2>
+        </div>
+        <div class="mainDesserts">
+            <h2 class="mainDessertsTitle1">DESSERTS</h2>
             <div class="mainDessertsCardWrapper">
                 <div class="mainDessertsCard">
                     <h3 class="mainDessertsCardTitle">Paris-Brest</h3>
@@ -131,7 +137,7 @@
                     <i class="fas fa-check-circle"></i>
                 </div>
             </div>
-        </section>
+        </div>
         <div class="mainCommand">
             <button class="mainCommandButton" type="button">Commander</button>
         </div>

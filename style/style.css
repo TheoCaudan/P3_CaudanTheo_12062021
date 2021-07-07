@@ -74,6 +74,41 @@
   margin-bottom: 10px;
 }
 
+.header {
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 0;
+  height: 50px;
+  width: 100%;
+  max-width: 1440px;
+}
+.headerLogo {
+  display: block;
+  width: 100px;
+  padding-left: 65px;
+  padding-bottom: 20px;
+  height: 30px;
+}
+.headerBack {
+  display: block;
+  position: relative;
+  left: 10px;
+  top: 25px;
+}
+
+.headerIndex {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 60px;
+  width: 100px;
+  padding-top: 20px;
+  padding-right: 90px;
+}
+
 .headerIndex {
   margin-left: auto;
   margin-right: auto;
@@ -297,30 +332,25 @@
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  background-color: #ffffff;
-  margin-bottom: 0;
+  background-color: white;
+  margin-bottom: 10px;
   margin-top: 0;
-  height: 40px;
+  height: 50px;
   width: 100%;
   max-width: 1440px;
-  padding-top: 20px;
 }
-
-.header a {
-  position: absolute;
-  padding-top: 10px;
-  left: 10px;
-}
-
-.header img {
+.headerLogo {
+  display: block;
   width: 100px;
-  position: absolute;
-  left: 170px;
-  padding-top: 10px;
-  margin: 0;
+  padding-left: 65px;
+  padding-bottom: 20px;
+  height: 30px;
+}
+.headerBack {
+  display: block;
+  position: relative;
+  left: 10px;
+  top: 25px;
 }
 
 .main {
@@ -330,11 +360,11 @@
   margin-right: auto;
 }
 .mainImg {
-  height: 270px;
+  height: 255px;
 }
 .mainImgTop {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   margin-bottom: 60px;
   margin-right: 0;
@@ -348,14 +378,98 @@
   font-family: "roboto";
   margin-bottom: 20px;
 }
-.mainHeader i {
+.mainHeaderGrade {
   position: absolute;
   padding-right: 20px;
   padding-top: 20px;
   height: 22px;
   width: 22px;
-  left: 180px;
-  top: 333px;
+  left: 260px;
+  top: 325px;
+}
+.mainStartersTitle1::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 408px;
+}
+.mainDishesTitle1::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 750px;
+}
+.mainDessertsTitle1::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 1093px;
+}
+.mainStartersTitle2::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 408px;
+}
+.mainDishesTitle2::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 750px;
+}
+.mainDessertsTitle2::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 1093px;
+}
+.mainStartersTitle3::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 408px;
+}
+.mainDishesTitle3::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 750px;
+}
+.mainDessertsTitle3::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 1093px;
+}
+.mainStartersTitle4::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 408px;
+}
+.mainDishesTitle4::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 750px;
+}
+.mainDessertsTitle4::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border-bottom: 2px solid #99e2d0;
+  top: 1093px;
 }
 .mainStarters, .mainDishes, .mainDesserts {
   margin-left: auto;
@@ -363,7 +477,7 @@
   max-width: 1440px;
   width: 100%;
 }
-.mainStartersTitle, .mainDishesTitle, .mainDessertsTitle {
+.mainStartersTitle1, .mainStartersTitle2, .mainStartersTitle3, .mainStartersTitle4, .mainDishesTitle1, .mainDishesTitle2, .mainDishesTitle3, .mainDishesTitle4, .mainDessertsTitle1, .mainDessertsTitle2, .mainDessertsTitle3, .mainDessertsTitle4 {
   font-size: medium;
   text-decoration: none;
   color: grey;
@@ -371,13 +485,6 @@
   font-weight: 100;
   padding-left: 10px;
   margin-bottom: 20px;
-}
-.mainStartersTitle::before, .mainDishesTitle::before, .mainDessertsTitle::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  border-bottom: 2px solid #99e2d0;
-  top: 413px;
 }
 .mainStartersCardWrapper, .mainDishesCardWrapper, .mainDessertsCardWrapper {
   width: 100%;
@@ -398,7 +505,6 @@
   grid-template-columns: 1fr auto auto;
   max-width: 380px;
   margin: 0 20px;
-  overflow: hidden;
 }
 .mainStartersCardTitle, .mainDishesCardTitle, .mainDessertsCardTitle {
   font-family: "roboto";
@@ -407,7 +513,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: bold;
-  margin: 10px 0;
+  width: 270px;
+  padding-right: 100px;
 }
 .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc {
   font-family: "roboto";
@@ -415,15 +522,27 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 10px 0;
   font-size: small;
+  width: 170px;
+  position: relative;
+  right: 400px;
+  top: 25px;
+}
+.mainStartersCardTitle, .mainStartersCardDesc, .mainDishesCardTitle, .mainDishesCardDesc, .mainDessertsCardTitle, .mainDessertsCardDesc {
+  display: block;
+  padding-left: 10px;
+  height: 35px;
 }
 .mainStartersCardPrice, .mainDishesCardPrice, .mainDessertsCardPrice {
+  display: block;
   font-family: "roboto";
   font-size: small;
   align-self: end;
-  margin: 10px 0;
   font-weight: 600;
+  text-align: end;
+  position: relative;
+  bottom: 25px;
+  padding-right: 30px;
 }
 .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck {
   background-color: #99e2d0;
@@ -436,6 +555,27 @@
   border-radius: 0 20px 20px 0;
   transition: all 400ms ease-in-out;
   transform: translateX(100%);
+}
+.mainCommand {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mainCommandButton {
+  width: 190px;
+  height: 55px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 220px;
+  display: block;
+  background: linear-gradient(to bottom right, #e471da, #b361db);
+  border-radius: 2em;
+  border-width: 0;
+  color: #fff;
+  font-size: medium;
+  font-family: "roboto";
 }
 
 /*# sourceMappingURL=style.css.map */
