@@ -109,19 +109,6 @@
   padding-right: 90px;
 }
 
-.headerIndex {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  background-color: #ffffff;
-  margin-bottom: 0;
-  margin-top: 0;
-  height: 60px;
-  width: 100px;
-  padding-top: 20px;
-  padding-right: 90px;
-}
-
 .explore {
   background-color: #fafafa;
   min-height: 240px;
@@ -329,28 +316,6 @@
 }
 .restaurantsMainCard a:hover {
   filter: brightness(1.25);
-}
-
-.header {
-  background-color: white;
-  margin-bottom: 10px;
-  margin-top: 0;
-  height: 50px;
-  width: 100%;
-  max-width: 1440px;
-}
-.headerLogo {
-  display: block;
-  width: 100px;
-  padding-left: 65px;
-  padding-bottom: 20px;
-  height: 30px;
-}
-.headerBack {
-  display: block;
-  position: relative;
-  left: 10px;
-  top: 25px;
 }
 
 .main {
