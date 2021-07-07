@@ -141,7 +141,8 @@
 }
 .explanationsStep1, .explanationsStep2, .explanationsStep3 {
   display: flex;
-  max-width: 100%;
+  width: 320px;
+  max-width: 90%;
   height: 70px;
   margin-left: auto;
   margin-right: auto;
