@@ -27,6 +27,10 @@
             right: 12px;
             top: 25px;
         }
+        &Grade:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     }
     &Starters{
         &Title1::before{
@@ -158,7 +162,7 @@
         }
         &Card{
             border-radius: 20px;
-            box-shadow: 3px 4px 11px 5px rgb(0 0 0 / 10%);
+            box-shadow: 0 0 14px #0000002E;
             cursor: pointer;
             height: 70px;
             background-color: #ffffff;
@@ -220,6 +224,11 @@
                 transform: translateX(100%);
             }
         }
+        &Card:hover{
+            cursor: pointer;
+            filter: brightness(1.25);
+            box-shadow: 0 0 25px #0000003E;
+        }
     }
     &Command{
         margin-top: 20px;
@@ -240,6 +249,12 @@
             color: $colour-white;
             font-size: medium;
             font-family: "roboto";
+            box-shadow: 0 0 14px #0000002E;
+        }
+        &Button:hover{
+            cursor: pointer;
+            filter: brightness(1.25);
+            box-shadow: 0 0 25px #0000003E;
         }
     }
 } 

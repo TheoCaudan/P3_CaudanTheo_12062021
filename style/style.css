@@ -377,6 +377,10 @@ h1 {
   right: 12px;
   top: 25px;
 }
+.mainHeaderGrade:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .mainStartersTitle1::before {
   content: "";
   position: absolute;
@@ -484,7 +488,7 @@ h1 {
 }
 .mainStartersCard, .mainDishesCard, .mainDessertsCard {
   border-radius: 20px;
-  box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px #0000002E;
   cursor: pointer;
   height: 70px;
   background-color: #ffffff;
@@ -546,6 +550,11 @@ h1 {
   transition: all 400ms ease-in-out;
   transform: translateX(100%);
 }
+.mainStartersCard:hover, .mainDishesCard:hover, .mainDessertsCard:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+  box-shadow: 0 0 25px #0000003E;
+}
 .mainCommand {
   margin-top: 20px;
   margin-bottom: 100px;
@@ -566,6 +575,12 @@ h1 {
   color: #fff;
   font-size: medium;
   font-family: "roboto";
+  box-shadow: 0 0 14px #0000002E;
+}
+.mainCommandButton:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+  box-shadow: 0 0 25px #0000003E;
 }
 
 /*# sourceMappingURL=style.css.map */
