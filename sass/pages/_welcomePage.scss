@@ -26,10 +26,12 @@
         color: $colour-white;
         font-size: medium;
         font-family: "roboto";
+        box-shadow: 0 0 14px #0000002E;
     }
     &Button:hover{
         cursor: pointer;
         filter: brightness(1.25);
+        box-shadow: 0 0 25px #0000003E;
     }
 }
 .main{
@@ -98,6 +100,7 @@
     &Step1:hover, &Step2:hover, &Step3:hover{
         cursor: pointer;
         background-color: $colour-xpln-hover;
+        box-shadow: 0 0 25px #0000003E;
     }
 }
 .restaurants{
@@ -188,9 +191,11 @@
             display: block;
             height: 250px;
             width: 100%;
+            border-radius: 1.25em;
         }
         &Card a:hover{
             filter: brightness(1.25);
+            box-shadow: 0 0 25px #0000003E;
         }
     }
 }
