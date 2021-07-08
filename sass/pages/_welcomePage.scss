@@ -118,6 +118,8 @@
         margin-left: auto;
         max-width: 1440px;
         &Card{
+            display: block;
+            text-decoration: none;
             border-radius: 1.25rem;
             background-color: white;
             box-shadow: 0 0 14px #0000002E;
@@ -145,6 +147,7 @@
                 height: 85px;
                 &Title, &Desc{
                     padding-top: 10px;
+                    display: block;
                     text-decoration: none;
                     font-family: "roboto", "sans-serif";
                     padding-left: 10px;
@@ -170,6 +173,7 @@
                 font-family: "roboto";
                 font-weight: bold;
                 font-size: medium;
+                display: block;
                 text-decoration: none;
                 position: relative;
                 left: 210px;
