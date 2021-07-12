@@ -27,7 +27,7 @@
         font-size: medium;
         font-family: "roboto";
         box-shadow: 0 0 14px #0000002E;
-        transition: filter 200ms;
+        transition: all 400ms ease-in-out;
     }
     &Button:hover{
         cursor: pointer;
@@ -65,6 +65,7 @@
         box-shadow: 0 0 14px #0000002E;
         margin-bottom: 20px;
         border-radius: 1.25em;
+        transition: all 400ms ease-in-out;
         &Number{
             align-self: flex-start;
             background-color: $colour-nmbrs;
@@ -193,6 +194,7 @@
             height: 250px;
             width: 100%;
             border-radius: 1.25em;
+            transition: all 400ms ease-in-out;
         }
         &Card a:hover{
             filter: brightness(1.25);

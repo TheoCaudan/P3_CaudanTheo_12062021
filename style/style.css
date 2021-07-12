@@ -169,7 +169,7 @@ h1 {
   font-size: medium;
   font-family: "roboto";
   box-shadow: 0 0 14px #0000002E;
-  transition: filter 200ms;
+  transition: all 400ms ease-in-out;
 }
 .exploreButton:hover {
   cursor: pointer;
@@ -209,6 +209,7 @@ h1 {
   box-shadow: 0 0 14px #0000002E;
   margin-bottom: 20px;
   border-radius: 1.25em;
+  transition: all 400ms ease-in-out;
 }
 .explanationsStep1Number, .explanationsStep2Number, .explanationsStep3Number {
   align-self: flex-start;
@@ -349,6 +350,7 @@ h1 {
   height: 250px;
   width: 100%;
   border-radius: 1.25em;
+  transition: all 400ms ease-in-out;
 }
 .restaurantsMainCard a:hover {
   filter: brightness(1.25);
