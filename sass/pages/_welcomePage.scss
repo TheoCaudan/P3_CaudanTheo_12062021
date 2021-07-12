@@ -27,6 +27,7 @@
         font-size: medium;
         font-family: "roboto";
         box-shadow: 0 0 14px #0000002E;
+        filter: brightness(1);
         transition: all 400ms ease-in-out;
     }
     &Button:hover{
@@ -194,6 +195,7 @@
             height: 250px;
             width: 100%;
             border-radius: 1.25em;
+            filter: brightness(1);
             transition: all 400ms ease-in-out;
         }
         &Card a:hover{

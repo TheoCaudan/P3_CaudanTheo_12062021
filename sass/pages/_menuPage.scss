@@ -26,7 +26,8 @@
             width: 22px;
             top: 25px;
             right: 1%;
-            transition: transform 200ms;
+            transform: scale(1);
+            transition: transform 400ms;
         }
         &Grade:hover{
             cursor: pointer;
@@ -224,6 +225,9 @@
                 transition: all 400ms ease-in-out;
                 transform: translateX(100%);
             }
+            &Check:active{
+                transform: translateX(0%);
+            }
         }
         &Card:hover{
             cursor: pointer;
@@ -251,6 +255,8 @@
             font-size: medium;
             font-family: "roboto";
             box-shadow: 0 0 14px #0000002E;
+            filter: brightness(1);
+            transition: all 400ms ease-in-out;
         }
         &Button:hover{
             cursor: pointer;
