@@ -27,6 +27,7 @@
         font-size: medium;
         font-family: "roboto";
         box-shadow: 0 0 14px #0000002E;
+        transition: filter 200ms;
     }
     &Button:hover{
         cursor: pointer;
