@@ -57,10 +57,10 @@
     }
     &Step1, &Step2, &Step3{
         display: flex;
-        width: 100%;
+        width: 90%;
         height: 70px;
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: auto;
+        margin-right: auto;
         background-color: $colour-xpln-bkgnd;
         box-shadow: 0 0 14px #0000002E;
         margin-bottom: 20px;
@@ -211,14 +211,42 @@
     }
 }
 @media screen and (min-width: 375px) and (max-width: 425px){
+    .explanations{
+        &Title{
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 180px;
+        }
+    }
     .restaurants{
+        &Title{
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+        }
         &Main{
             width: 350px;
         }
     }
 }
 @media screen and (min-width: 426px) and (max-width: 768px){
+    .explanations{
+        &Title{
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 180px;
+        }
+    }
     .restaurants{
+        &Title{
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+        }
         &Main{
             width: auto;
             margin-left: 25px;

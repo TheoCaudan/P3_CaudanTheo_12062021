@@ -202,10 +202,10 @@ h1 {
 }
 .explanationsStep1, .explanationsStep2, .explanationsStep3 {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 70px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fafafa;
   box-shadow: 0 0 14px #0000002E;
   margin-bottom: 20px;
@@ -367,11 +367,37 @@ h1 {
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
+  .explanationsTitle {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+  }
+
+  .restaurantsTitle {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
   .restaurantsMain {
     width: 350px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  .explanationsTitle {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+  }
+
+  .restaurantsTitle {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
   .restaurantsMain {
     width: auto;
     margin-left: 25px;
@@ -417,90 +443,92 @@ h1 {
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 111px;
+  top: 22px;
 }
 .mainDishesTitle1::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 544px;
+  top: 22px;
 }
 .mainDessertsTitle1::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 978px;
+  top: 22px;
 }
 .mainStartersTitle2::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 111px;
+  top: 22px;
 }
 .mainDishesTitle2::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 676px;
+  top: 22px;
 }
 .mainDessertsTitle2::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 1110px;
+  top: 22px;
 }
 .mainStartersTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 111px;
+  top: 22px;
 }
 .mainDishesTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 544px;
+  top: 22px;
 }
 .mainDessertsTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 978px;
+  top: 22px;
 }
 .mainStartersTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 111px;
+  top: 22px;
 }
 .mainDishesTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 544px;
+  top: 22px;
 }
 .mainDessertsTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
-  top: 978px;
+  top: 22px;
 }
 .mainStarters, .mainDishes, .mainDesserts {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
   width: 100%;
+  animation: menuApparition 700ms ease-out forwards;
+  opacity: 0;
 }
 .mainStartersTitle1, .mainStartersTitle2, .mainStartersTitle3, .mainStartersTitle4, .mainDishesTitle1, .mainDishesTitle2, .mainDishesTitle3, .mainDishesTitle4, .mainDessertsTitle1, .mainDessertsTitle2, .mainDessertsTitle3, .mainDessertsTitle4 {
   font-size: medium;
@@ -636,6 +664,16 @@ h1 {
   }
   .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc {
     max-width: 250px;
+  }
+}
+@keyframes menuApparition {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
