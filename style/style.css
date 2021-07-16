@@ -527,8 +527,83 @@ h1 {
   margin-right: auto;
   max-width: 1440px;
   width: 100%;
-  animation: menuApparition 700ms ease-out forwards;
+  animation: menuAnimation 800ms ease-out forwards;
   opacity: 0;
+}
+.mainStarters:nth-child(1), .mainDishes:nth-child(1), .mainDesserts:nth-child(1) {
+  animation-delay: 400ms;
+}
+.mainStarters:nth-child(2), .mainDishes:nth-child(2), .mainDesserts:nth-child(2) {
+  animation-delay: 800ms;
+}
+.mainStarters:nth-child(3), .mainDishes:nth-child(3), .mainDesserts:nth-child(3) {
+  animation-delay: 1200ms;
+}
+.mainStarters:nth-child(4), .mainDishes:nth-child(4), .mainDesserts:nth-child(4) {
+  animation-delay: 1600ms;
+}
+.mainStarters:nth-child(5), .mainDishes:nth-child(5), .mainDesserts:nth-child(5) {
+  animation-delay: 2000ms;
+}
+.mainStarters:nth-child(6), .mainDishes:nth-child(6), .mainDesserts:nth-child(6) {
+  animation-delay: 2400ms;
+}
+.mainStarters:nth-child(7), .mainDishes:nth-child(7), .mainDesserts:nth-child(7) {
+  animation-delay: 2800ms;
+}
+.mainStarters:nth-child(8), .mainDishes:nth-child(8), .mainDesserts:nth-child(8) {
+  animation-delay: 3200ms;
+}
+.mainStarters:nth-child(9), .mainDishes:nth-child(9), .mainDesserts:nth-child(9) {
+  animation-delay: 3600ms;
+}
+.mainStarters:nth-child(10), .mainDishes:nth-child(10), .mainDesserts:nth-child(10) {
+  animation-delay: 4000ms;
+}
+.mainStarters:nth-child(11), .mainDishes:nth-child(11), .mainDesserts:nth-child(11) {
+  animation-delay: 4400ms;
+}
+.mainStarters:nth-child(12), .mainDishes:nth-child(12), .mainDesserts:nth-child(12) {
+  animation-delay: 4800ms;
+}
+.mainStarters:nth-child(13), .mainDishes:nth-child(13), .mainDesserts:nth-child(13) {
+  animation-delay: 5200ms;
+}
+.mainStarters:nth-child(14), .mainDishes:nth-child(14), .mainDesserts:nth-child(14) {
+  animation-delay: 5600ms;
+}
+.mainStarters:nth-child(15), .mainDishes:nth-child(15), .mainDesserts:nth-child(15) {
+  animation-delay: 6000ms;
+}
+.mainStarters:nth-child(16), .mainDishes:nth-child(16), .mainDesserts:nth-child(16) {
+  animation-delay: 6400ms;
+}
+.mainStarters:nth-child(17), .mainDishes:nth-child(17), .mainDesserts:nth-child(17) {
+  animation-delay: 6800ms;
+}
+.mainStarters:nth-child(18), .mainDishes:nth-child(18), .mainDesserts:nth-child(18) {
+  animation-delay: 7200ms;
+}
+.mainStarters:nth-child(19), .mainDishes:nth-child(19), .mainDesserts:nth-child(19) {
+  animation-delay: 7600ms;
+}
+.mainStarters:nth-child(20), .mainDishes:nth-child(20), .mainDesserts:nth-child(20) {
+  animation-delay: 8000ms;
+}
+.mainStarters:nth-child(21), .mainDishes:nth-child(21), .mainDesserts:nth-child(21) {
+  animation-delay: 8400ms;
+}
+.mainStarters:nth-child(22), .mainDishes:nth-child(22), .mainDesserts:nth-child(22) {
+  animation-delay: 8800ms;
+}
+.mainStarters:nth-child(23), .mainDishes:nth-child(23), .mainDesserts:nth-child(23) {
+  animation-delay: 9200ms;
+}
+.mainStarters:nth-child(24), .mainDishes:nth-child(24), .mainDesserts:nth-child(24) {
+  animation-delay: 9600ms;
+}
+.mainStarters:nth-child(25), .mainDishes:nth-child(25), .mainDesserts:nth-child(25) {
+  animation-delay: 10000ms;
 }
 .mainStartersTitle1, .mainStartersTitle2, .mainStartersTitle3, .mainStartersTitle4, .mainDishesTitle1, .mainDishesTitle2, .mainDishesTitle3, .mainDishesTitle4, .mainDessertsTitle1, .mainDessertsTitle2, .mainDessertsTitle3, .mainDessertsTitle4 {
   font-size: medium;
@@ -544,8 +619,6 @@ h1 {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  grid-template-rows: 1fr, auto;
-  grid-template-areas: "desc price";
 }
 .mainStartersCard, .mainDishesCard, .mainDessertsCard {
   border-radius: 20px;
@@ -613,10 +686,20 @@ h1 {
   border-radius: 0 20px 20px 0;
   transition: all 400ms ease-in-out;
   transform: translateX(100%);
-  transform-origin: right;
 }
-.mainStartersCardCheck:active, .mainDishesCardCheck:active, .mainDessertsCardCheck:active {
+.mainStartersCardCheckIcon, .mainDishesCardCheckIcon, .mainDessertsCardCheckIcon {
+  font-size: 1.5rem;
+  transform: rotate(-360deg);
+  transition: all 0.4s 100ms ease;
+  opacity: 0;
+}
+.mainStartersCardCheckIcon:hover, .mainDishesCardCheckIcon:hover, .mainDessertsCardCheckIcon:hover {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.mainStartersCardCheck:hover, .mainDishesCardCheck:hover, .mainDessertsCardCheck:hover {
   transform: translateX(0%);
+  width: 4rem;
 }
 .mainStartersCard:hover, .mainDishesCard:hover, .mainDessertsCard:hover {
   cursor: pointer;
@@ -666,7 +749,7 @@ h1 {
     max-width: 250px;
   }
 }
-@keyframes menuApparition {
+@keyframes menuAnimation {
   0% {
     transform: translateY(100%);
     opacity: 0;
