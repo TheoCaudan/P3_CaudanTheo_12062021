@@ -10,7 +10,7 @@
     border-radius: 40px 40px 0 0;
     margin-top: 208px;
     padding-top: 16px;
-    height: 1350px;
+    height: 1650px;
     &Header{
         &Title{
             padding-left: 20px;
@@ -49,7 +49,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 453px;
+            top: 544px;
         }
     }
     &Desserts{
@@ -58,7 +58,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 797px;
+            top: 978px;
         }
     }
     &Starters{
@@ -76,7 +76,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 554px;
+            top: 676px;
         }
     }
     &Desserts{
@@ -85,7 +85,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 898px;
+            top: 1110px;
         }
     }
     &Starters{
@@ -103,7 +103,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 453px;
+            top: 544px;
         }
     }
     &Desserts{
@@ -112,7 +112,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 797px;
+            top: 978px;
         }
     }
     &Starters{
@@ -130,7 +130,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 453px;
+            top: 544px;
         }
     }
     &Desserts{
@@ -139,7 +139,7 @@
             position: absolute;
             width: 40px;
             border-bottom: 2px solid #99e2d0;
-            top: 797px;
+            top: 978px;
         }
     }
     &Starters, &Dishes, &Desserts{
@@ -161,6 +161,8 @@
             height: auto;
             margin-left: auto;
             margin-right: auto;
+            grid-template-rows: 1fr, auto;
+            grid-template-areas: "desc price";
         }
         &Card{
             border-radius: 20px;
@@ -172,35 +174,32 @@
             display: grid;
             gap: 20px;
             align-items: center;
-            grid-template-columns: 1fr auto auto;
             max-width: 380px;
-            margin: 0 20px;
+            margin: 0px 20px;
             &Title{
                 font-family: "roboto";
                 font-size: medium;
-                white-space: nowrap;
                 overflow: hidden;
+                white-space: nowrap;
                 text-overflow: ellipsis;
                 font-weight: bold;
-                width: 270px;
-                padding-right: 100px;
+                width: 100%;
+                padding-top: 0;
+                margin-top: 20px;
             }
             &Desc{
                 font-family: "roboto";
                 font-weight: 200;
-                white-space: nowrap;
                 overflow: hidden;
+                white-space: nowrap;
                 text-overflow: ellipsis;
                 font-size: small;
-                width: 225px;
-                position: relative;
-                top: 25px;
-                left: -400px;
+                max-width: 225px;
+                margin-top: 10px;
+                margin-bottom: 20px;
             }
             &Title, &Desc{
-                display: block;
                 padding-left: 10px;
-                height: 35px;
             }
             &Price{
                 display: block;
@@ -209,9 +208,15 @@
                 align-self: end;
                 font-weight: 600;
                 text-align: end;
-                position:relative;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                width: 20px;
+                margin-left: auto;
+                margin-top: auto;
+                position: relative;
                 bottom: 25px;
-                padding-right: 35px;
             }
             &Check{
                 background-color: #99e2d0;
@@ -271,33 +276,19 @@
         &Starters, &Dishes, &Desserts{
             &Card{
                 &Desc{
-                    width: 245px;
+                    max-width: 245px;
                 }
             }
         }
     }
 }
-@media screen and (min-width: 426px) and (max-width: 720px){
+@media screen and (min-width: 426px) and (max-width: 768px){
     .main{
         &Starters, &Dishes, &Desserts{
             &Card{
                 max-width: 730px;
                 &Desc{
-                    left: -400px;
-                    width: 250px;
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 721px) and (max-width: 768px){
-    .main{
-        &Starters, &Dishes, &Desserts{
-            &Card{
-                max-width: 730px;
-                &Desc{                    
-                    left: -400px; //problème: à partir de 721px se décale vers la droite quand on agrandit la largeur de l'écran
-                    width: 250px;
+                    max-width: 250px;
                 }
             }
         }
