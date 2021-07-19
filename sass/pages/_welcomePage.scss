@@ -218,6 +218,8 @@
             margin-left: auto;
             margin-right: auto;
             width: 180px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
     .restaurants{
@@ -225,7 +227,9 @@
             padding: 0;
             margin-left: auto;
             margin-right: auto;
-            width: 150px;
+            width: 140px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         &Main{
             width: 350px;
@@ -239,6 +243,8 @@
             margin-left: auto;
             margin-right: auto;
             width: 180px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
     .restaurants{
@@ -246,7 +252,9 @@
             padding: 0;
             margin-left: auto;
             margin-right: auto;
-            width: 150px;
+            width: 140px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         &Main{
             width: auto;
@@ -263,6 +271,8 @@
             margin-left: auto;
             margin-right: auto;
             width: 180px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         &Main{
             display: grid;
@@ -292,7 +302,9 @@
             padding: 0;
             margin-left: auto;
             margin-right: auto;
-            width: 150px;
+            width: 140px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         &Main{
             grid-template-columns: repeat(2, 1fr);

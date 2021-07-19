@@ -373,13 +373,17 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .restaurantsTitle {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
+    width: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .restaurantsMain {
     width: 350px;
@@ -391,13 +395,17 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .restaurantsTitle {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
+    width: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .restaurantsMain {
     width: auto;
@@ -412,6 +420,8 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .explanationsMain {
     display: grid;
@@ -440,7 +450,9 @@ h1 {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
+    width: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .restaurantsMain {
     grid-template-columns: repeat(2, 1fr);
