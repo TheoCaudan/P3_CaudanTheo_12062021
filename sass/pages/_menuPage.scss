@@ -309,6 +309,30 @@
         }
     }
 }
+@media screen and (min-width:769px) and (max-width: 2560px){
+    
+    /*.main{
+        display: grid;
+        align-items: center;
+	    grid-template-columns: 1fr auto auto;
+        grid-template-areas: "starters dishes desserts"
+        &Starters{
+            grid-area: starters;
+        }
+        &Dishes{
+            grid-area: dishes;
+        }
+        &Desserts{
+            grid-area: desserts;
+        }
+        &Starters, &Dishes, &Desserts{
+            width: auto;
+            &Desc{
+                max-width: 250px;
+            }
+        }
+    }*/
+}
 
 @keyframes menuAnimation {
 	0% {

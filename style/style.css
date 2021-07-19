@@ -243,6 +243,7 @@ h1 {
   vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
+  text-overflow: ellipsis;
 }
 .explanationsStep1:hover, .explanationsStep2:hover, .explanationsStep3:hover {
   cursor: pointer;
@@ -400,8 +401,64 @@ h1 {
   }
   .restaurantsMain {
     width: auto;
+    max-width: 100%;
     margin-left: 25px;
     margin-right: 25px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 2560px) {
+  .explanationsTitle {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+  }
+  .explanationsMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "step1 step2 step3";
+  }
+  .explanationsStep1Wrapper {
+    grid-area: step1;
+  }
+  .explanationsStep2Wrapper {
+    grid-area: step2;
+  }
+  .explanationsStep3Wrapper {
+    grid-area: step3;
+  }
+  .explanationsStep1, .explanationsStep2, .explanationsStep3 {
+    width: 90%;
+  }
+  .explanationsText {
+    max-width: 90%;
+    text-overflow: ellipsis;
+  }
+
+  .restaurantsTitle {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
+  .restaurantsMain {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "pos1 pos2" "pos3 pos4";
+    max-width: 100%;
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 600px;
+  }
+  .restaurantsMainCard {
+    min-width: 300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    gap: 20px;
   }
 }
 .main {
@@ -748,6 +805,29 @@ h1 {
   .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc {
     max-width: 250px;
   }
+}
+@media screen and (min-width: 769px) and (max-width: 2560px) {
+  /*.main{
+      display: grid;
+      align-items: center;
+   grid-template-columns: 1fr auto auto;
+      grid-template-areas: "starters dishes desserts"
+      &Starters{
+          grid-area: starters;
+      }
+      &Dishes{
+          grid-area: dishes;
+      }
+      &Desserts{
+          grid-area: desserts;
+      }
+      &Starters, &Dishes, &Desserts{
+          width: auto;
+          &Desc{
+              max-width: 250px;
+          }
+      }
+  }*/
 }
 @keyframes menuAnimation {
   0% {
