@@ -759,7 +759,7 @@ h1 {
 .mainStartersCardCheckIcon, .mainDishesCardCheckIcon, .mainDessertsCardCheckIcon {
   font-size: 1.5rem;
   transform: rotate(-360deg);
-  transition: all 0.4s 100ms ease;
+  transition: all 400ms 100ms ease;
   opacity: 0;
 }
 .mainStartersCardCheckIcon:hover, .mainDishesCardCheckIcon:hover, .mainDessertsCardCheckIcon:hover {

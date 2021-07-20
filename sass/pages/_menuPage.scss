@@ -237,7 +237,7 @@
                 &Icon{
                     font-size: 1.5rem;
 		            transform: rotate(-360deg);
-		            transition: all 0.4s 100ms ease;
+		            transition: all 400ms 100ms ease;
 		            opacity: 0;
                 }
                 &Icon:hover{
@@ -310,7 +310,7 @@
     }
 }
 @media screen and (min-width:769px) and (max-width: 2560px){
-    
+    // peut-etre ajouter un wrapper ?
     /*.main{
         display: grid;
         align-items: center;
