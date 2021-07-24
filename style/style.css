@@ -25,6 +25,64 @@ h1 {
   font-size: x-large;
 }
 
+.loading {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loadingScreenBckgrnd 4000ms ease-out forwards;
+  z-index: 100;
+  position: fixed;
+}
+.loadingScreen {
+  width: 100%;
+  padding: 0;
+}
+.loadingScreenSvg {
+  height: 100vh;
+  width: 100%;
+  font-size: 100rem;
+}
+.loadingScreenSvg path {
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #9356dc;
+  animation: loadingScreenTxt 2000ms 400ms linear forwards;
+}
+
+@keyframes loadingScreenBckgrnd {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loadingScreenTxt {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .search {
   display: flex;
   align-items: center;
@@ -473,7 +531,7 @@ h1 {
     gap: 20px;
   }
 }
-.main {
+.main, .main2 {
   display: block;
   width: 100%;
   max-width: 1440px;
@@ -486,13 +544,13 @@ h1 {
   padding-top: 16px;
   height: 1650px;
 }
-.mainHeaderTitle {
+.mainHeaderTitle, .main2HeaderTitle {
   padding-left: 20px;
   margin-top: 20px;
   font-family: "Shrikhand";
   margin-bottom: 20px;
 }
-.mainHeaderGrade {
+.mainHeaderGrade, .main2HeaderGrade {
   position: absolute;
   padding-right: 20px;
   padding-top: 20px;
@@ -503,95 +561,95 @@ h1 {
   transform: scale(1);
   transition: transform 400ms;
 }
-.mainHeaderGrade:hover {
+.mainHeaderGrade:hover, .main2HeaderGrade:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.mainStartersTitle1::before {
+.mainStartersTitle1::before, .main2StartersTitle1::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDishesTitle1::before {
+.mainDishesTitle1::before, .main2DishesTitle1::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDessertsTitle1::before {
+.mainDessertsTitle1::before, .main2DessertsTitle1::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainStartersTitle2::before {
+.mainStartersTitle2::before, .main2StartersTitle2::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDishesTitle2::before {
+.mainDishesTitle2::before, .main2DishesTitle2::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDessertsTitle2::before {
+.mainDessertsTitle2::before, .main2DessertsTitle2::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainStartersTitle3::before {
+.mainStartersTitle3::before, .main2StartersTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDishesTitle3::before {
+.mainDishesTitle3::before, .main2DishesTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDessertsTitle3::before {
+.mainDessertsTitle3::before, .main2DessertsTitle3::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainStartersTitle4::before {
+.mainStartersTitle4::before, .main2StartersTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDishesTitle4::before {
+.mainDishesTitle4::before, .main2DishesTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainDessertsTitle4::before {
+.mainDessertsTitle4::before, .main2DessertsTitle4::before {
   content: "";
   position: absolute;
   width: 40px;
   border-bottom: 2px solid #99e2d0;
   top: 22px;
 }
-.mainStarters, .mainDishes, .mainDesserts {
+.mainStarters, .mainDishes, .mainDesserts, .main2Starters, .main2Dishes, .main2Desserts {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
@@ -599,82 +657,82 @@ h1 {
   animation: menuAnimation 800ms ease-out forwards;
   opacity: 0;
 }
-.mainStarters:nth-child(1), .mainDishes:nth-child(1), .mainDesserts:nth-child(1) {
+.mainStarters:nth-child(1), .mainDishes:nth-child(1), .mainDesserts:nth-child(1), .main2Starters:nth-child(1), .main2Dishes:nth-child(1), .main2Desserts:nth-child(1) {
   animation-delay: 400ms;
 }
-.mainStarters:nth-child(2), .mainDishes:nth-child(2), .mainDesserts:nth-child(2) {
+.mainStarters:nth-child(2), .mainDishes:nth-child(2), .mainDesserts:nth-child(2), .main2Starters:nth-child(2), .main2Dishes:nth-child(2), .main2Desserts:nth-child(2) {
   animation-delay: 800ms;
 }
-.mainStarters:nth-child(3), .mainDishes:nth-child(3), .mainDesserts:nth-child(3) {
+.mainStarters:nth-child(3), .mainDishes:nth-child(3), .mainDesserts:nth-child(3), .main2Starters:nth-child(3), .main2Dishes:nth-child(3), .main2Desserts:nth-child(3) {
   animation-delay: 1200ms;
 }
-.mainStarters:nth-child(4), .mainDishes:nth-child(4), .mainDesserts:nth-child(4) {
+.mainStarters:nth-child(4), .mainDishes:nth-child(4), .mainDesserts:nth-child(4), .main2Starters:nth-child(4), .main2Dishes:nth-child(4), .main2Desserts:nth-child(4) {
   animation-delay: 1600ms;
 }
-.mainStarters:nth-child(5), .mainDishes:nth-child(5), .mainDesserts:nth-child(5) {
+.mainStarters:nth-child(5), .mainDishes:nth-child(5), .mainDesserts:nth-child(5), .main2Starters:nth-child(5), .main2Dishes:nth-child(5), .main2Desserts:nth-child(5) {
   animation-delay: 2000ms;
 }
-.mainStarters:nth-child(6), .mainDishes:nth-child(6), .mainDesserts:nth-child(6) {
+.mainStarters:nth-child(6), .mainDishes:nth-child(6), .mainDesserts:nth-child(6), .main2Starters:nth-child(6), .main2Dishes:nth-child(6), .main2Desserts:nth-child(6) {
   animation-delay: 2400ms;
 }
-.mainStarters:nth-child(7), .mainDishes:nth-child(7), .mainDesserts:nth-child(7) {
+.mainStarters:nth-child(7), .mainDishes:nth-child(7), .mainDesserts:nth-child(7), .main2Starters:nth-child(7), .main2Dishes:nth-child(7), .main2Desserts:nth-child(7) {
   animation-delay: 2800ms;
 }
-.mainStarters:nth-child(8), .mainDishes:nth-child(8), .mainDesserts:nth-child(8) {
+.mainStarters:nth-child(8), .mainDishes:nth-child(8), .mainDesserts:nth-child(8), .main2Starters:nth-child(8), .main2Dishes:nth-child(8), .main2Desserts:nth-child(8) {
   animation-delay: 3200ms;
 }
-.mainStarters:nth-child(9), .mainDishes:nth-child(9), .mainDesserts:nth-child(9) {
+.mainStarters:nth-child(9), .mainDishes:nth-child(9), .mainDesserts:nth-child(9), .main2Starters:nth-child(9), .main2Dishes:nth-child(9), .main2Desserts:nth-child(9) {
   animation-delay: 3600ms;
 }
-.mainStarters:nth-child(10), .mainDishes:nth-child(10), .mainDesserts:nth-child(10) {
+.mainStarters:nth-child(10), .mainDishes:nth-child(10), .mainDesserts:nth-child(10), .main2Starters:nth-child(10), .main2Dishes:nth-child(10), .main2Desserts:nth-child(10) {
   animation-delay: 4000ms;
 }
-.mainStarters:nth-child(11), .mainDishes:nth-child(11), .mainDesserts:nth-child(11) {
+.mainStarters:nth-child(11), .mainDishes:nth-child(11), .mainDesserts:nth-child(11), .main2Starters:nth-child(11), .main2Dishes:nth-child(11), .main2Desserts:nth-child(11) {
   animation-delay: 4400ms;
 }
-.mainStarters:nth-child(12), .mainDishes:nth-child(12), .mainDesserts:nth-child(12) {
+.mainStarters:nth-child(12), .mainDishes:nth-child(12), .mainDesserts:nth-child(12), .main2Starters:nth-child(12), .main2Dishes:nth-child(12), .main2Desserts:nth-child(12) {
   animation-delay: 4800ms;
 }
-.mainStarters:nth-child(13), .mainDishes:nth-child(13), .mainDesserts:nth-child(13) {
+.mainStarters:nth-child(13), .mainDishes:nth-child(13), .mainDesserts:nth-child(13), .main2Starters:nth-child(13), .main2Dishes:nth-child(13), .main2Desserts:nth-child(13) {
   animation-delay: 5200ms;
 }
-.mainStarters:nth-child(14), .mainDishes:nth-child(14), .mainDesserts:nth-child(14) {
+.mainStarters:nth-child(14), .mainDishes:nth-child(14), .mainDesserts:nth-child(14), .main2Starters:nth-child(14), .main2Dishes:nth-child(14), .main2Desserts:nth-child(14) {
   animation-delay: 5600ms;
 }
-.mainStarters:nth-child(15), .mainDishes:nth-child(15), .mainDesserts:nth-child(15) {
+.mainStarters:nth-child(15), .mainDishes:nth-child(15), .mainDesserts:nth-child(15), .main2Starters:nth-child(15), .main2Dishes:nth-child(15), .main2Desserts:nth-child(15) {
   animation-delay: 6000ms;
 }
-.mainStarters:nth-child(16), .mainDishes:nth-child(16), .mainDesserts:nth-child(16) {
+.mainStarters:nth-child(16), .mainDishes:nth-child(16), .mainDesserts:nth-child(16), .main2Starters:nth-child(16), .main2Dishes:nth-child(16), .main2Desserts:nth-child(16) {
   animation-delay: 6400ms;
 }
-.mainStarters:nth-child(17), .mainDishes:nth-child(17), .mainDesserts:nth-child(17) {
+.mainStarters:nth-child(17), .mainDishes:nth-child(17), .mainDesserts:nth-child(17), .main2Starters:nth-child(17), .main2Dishes:nth-child(17), .main2Desserts:nth-child(17) {
   animation-delay: 6800ms;
 }
-.mainStarters:nth-child(18), .mainDishes:nth-child(18), .mainDesserts:nth-child(18) {
+.mainStarters:nth-child(18), .mainDishes:nth-child(18), .mainDesserts:nth-child(18), .main2Starters:nth-child(18), .main2Dishes:nth-child(18), .main2Desserts:nth-child(18) {
   animation-delay: 7200ms;
 }
-.mainStarters:nth-child(19), .mainDishes:nth-child(19), .mainDesserts:nth-child(19) {
+.mainStarters:nth-child(19), .mainDishes:nth-child(19), .mainDesserts:nth-child(19), .main2Starters:nth-child(19), .main2Dishes:nth-child(19), .main2Desserts:nth-child(19) {
   animation-delay: 7600ms;
 }
-.mainStarters:nth-child(20), .mainDishes:nth-child(20), .mainDesserts:nth-child(20) {
+.mainStarters:nth-child(20), .mainDishes:nth-child(20), .mainDesserts:nth-child(20), .main2Starters:nth-child(20), .main2Dishes:nth-child(20), .main2Desserts:nth-child(20) {
   animation-delay: 8000ms;
 }
-.mainStarters:nth-child(21), .mainDishes:nth-child(21), .mainDesserts:nth-child(21) {
+.mainStarters:nth-child(21), .mainDishes:nth-child(21), .mainDesserts:nth-child(21), .main2Starters:nth-child(21), .main2Dishes:nth-child(21), .main2Desserts:nth-child(21) {
   animation-delay: 8400ms;
 }
-.mainStarters:nth-child(22), .mainDishes:nth-child(22), .mainDesserts:nth-child(22) {
+.mainStarters:nth-child(22), .mainDishes:nth-child(22), .mainDesserts:nth-child(22), .main2Starters:nth-child(22), .main2Dishes:nth-child(22), .main2Desserts:nth-child(22) {
   animation-delay: 8800ms;
 }
-.mainStarters:nth-child(23), .mainDishes:nth-child(23), .mainDesserts:nth-child(23) {
+.mainStarters:nth-child(23), .mainDishes:nth-child(23), .mainDesserts:nth-child(23), .main2Starters:nth-child(23), .main2Dishes:nth-child(23), .main2Desserts:nth-child(23) {
   animation-delay: 9200ms;
 }
-.mainStarters:nth-child(24), .mainDishes:nth-child(24), .mainDesserts:nth-child(24) {
+.mainStarters:nth-child(24), .mainDishes:nth-child(24), .mainDesserts:nth-child(24), .main2Starters:nth-child(24), .main2Dishes:nth-child(24), .main2Desserts:nth-child(24) {
   animation-delay: 9600ms;
 }
-.mainStarters:nth-child(25), .mainDishes:nth-child(25), .mainDesserts:nth-child(25) {
+.mainStarters:nth-child(25), .mainDishes:nth-child(25), .mainDesserts:nth-child(25), .main2Starters:nth-child(25), .main2Dishes:nth-child(25), .main2Desserts:nth-child(25) {
   animation-delay: 10000ms;
 }
-.mainStartersTitle1, .mainStartersTitle2, .mainStartersTitle3, .mainStartersTitle4, .mainDishesTitle1, .mainDishesTitle2, .mainDishesTitle3, .mainDishesTitle4, .mainDessertsTitle1, .mainDessertsTitle2, .mainDessertsTitle3, .mainDessertsTitle4 {
+.mainStartersTitle1, .mainStartersTitle2, .mainStartersTitle3, .mainStartersTitle4, .mainDishesTitle1, .mainDishesTitle2, .mainDishesTitle3, .mainDishesTitle4, .mainDessertsTitle1, .mainDessertsTitle2, .mainDessertsTitle3, .mainDessertsTitle4, .main2StartersTitle1, .main2StartersTitle2, .main2StartersTitle3, .main2StartersTitle4, .main2DishesTitle1, .main2DishesTitle2, .main2DishesTitle3, .main2DishesTitle4, .main2DessertsTitle1, .main2DessertsTitle2, .main2DessertsTitle3, .main2DessertsTitle4 {
   font-size: medium;
   text-decoration: none;
   color: grey;
@@ -683,13 +741,13 @@ h1 {
   padding-left: 10px;
   margin-bottom: 20px;
 }
-.mainStartersCardWrapper, .mainDishesCardWrapper, .mainDessertsCardWrapper {
+.mainStartersCardWrapper, .mainDishesCardWrapper, .mainDessertsCardWrapper, .main2StartersCardWrapper, .main2DishesCardWrapper, .main2DessertsCardWrapper {
   width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
-.mainStartersCard, .mainDishesCard, .mainDessertsCard {
+.mainStartersCard, .mainDishesCard, .mainDessertsCard, .main2StartersCard, .main2DishesCard, .main2DessertsCard {
   border-radius: 20px;
   box-shadow: 0 0 14px #0000002E;
   cursor: pointer;
@@ -702,7 +760,7 @@ h1 {
   max-width: 380px;
   margin: 0px 20px;
 }
-.mainStartersCardTitle, .mainDishesCardTitle, .mainDessertsCardTitle {
+.mainStartersCardTitle, .mainDishesCardTitle, .mainDessertsCardTitle, .main2StartersCardTitle, .main2DishesCardTitle, .main2DessertsCardTitle {
   font-family: "roboto";
   font-size: medium;
   overflow: hidden;
@@ -713,7 +771,7 @@ h1 {
   padding-top: 0;
   margin-top: 20px;
 }
-.mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc {
+.mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc, .main2StartersCardDesc, .main2DishesCardDesc, .main2DessertsCardDesc {
   font-family: "roboto";
   font-weight: 200;
   overflow: hidden;
@@ -724,10 +782,10 @@ h1 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.mainStartersCardTitle, .mainStartersCardDesc, .mainDishesCardTitle, .mainDishesCardDesc, .mainDessertsCardTitle, .mainDessertsCardDesc {
+.mainStartersCardTitle, .mainStartersCardDesc, .mainDishesCardTitle, .mainDishesCardDesc, .mainDessertsCardTitle, .mainDessertsCardDesc, .main2StartersCardTitle, .main2StartersCardDesc, .main2DishesCardTitle, .main2DishesCardDesc, .main2DessertsCardTitle, .main2DessertsCardDesc {
   padding-left: 10px;
 }
-.mainStartersCardPrice, .mainDishesCardPrice, .mainDessertsCardPrice {
+.mainStartersCardPrice, .mainDishesCardPrice, .mainDessertsCardPrice, .main2StartersCardPrice, .main2DishesCardPrice, .main2DessertsCardPrice {
   display: block;
   font-family: "roboto";
   font-size: small;
@@ -744,7 +802,7 @@ h1 {
   position: relative;
   bottom: 25px;
 }
-.mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck {
+.mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck, .main2StartersCardCheck, .main2DishesCardCheck, .main2DessertsCardCheck {
   background-color: #99e2d0;
   color: #ffffff;
   height: 100%;
@@ -756,33 +814,33 @@ h1 {
   transition: all 400ms ease-in-out;
   transform: translateX(100%);
 }
-.mainStartersCardCheckIcon, .mainDishesCardCheckIcon, .mainDessertsCardCheckIcon {
+.mainStartersCardCheckIcon, .mainDishesCardCheckIcon, .mainDessertsCardCheckIcon, .main2StartersCardCheckIcon, .main2DishesCardCheckIcon, .main2DessertsCardCheckIcon {
   font-size: 1.5rem;
   transform: rotate(-360deg);
   transition: all 400ms 100ms ease;
   opacity: 0;
 }
-.mainStartersCardCheckIcon:hover, .mainDishesCardCheckIcon:hover, .mainDessertsCardCheckIcon:hover {
+.mainStartersCardCheckIcon:hover, .mainDishesCardCheckIcon:hover, .mainDessertsCardCheckIcon:hover, .main2StartersCardCheckIcon:hover, .main2DishesCardCheckIcon:hover, .main2DessertsCardCheckIcon:hover {
   transform: rotate(0deg);
   opacity: 1;
 }
-.mainStartersCardCheck:hover, .mainDishesCardCheck:hover, .mainDessertsCardCheck:hover {
+.mainStartersCardCheck:hover, .mainDishesCardCheck:hover, .mainDessertsCardCheck:hover, .main2StartersCardCheck:hover, .main2DishesCardCheck:hover, .main2DessertsCardCheck:hover {
   transform: translateX(0%);
   width: 4rem;
 }
-.mainStartersCard:hover, .mainDishesCard:hover, .mainDessertsCard:hover {
+.mainStartersCard:hover, .mainDishesCard:hover, .mainDessertsCard:hover, .main2StartersCard:hover, .main2DishesCard:hover, .main2DessertsCard:hover {
   cursor: pointer;
   filter: brightness(1.25);
   box-shadow: 0 0 25px #0000003E;
 }
-.mainCommand {
+.mainCommand, .main2Command {
   margin-top: 20px;
   margin-bottom: 100px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-.mainCommandButton {
+.mainCommandButton, .main2CommandButton {
   width: 190px;
   height: 55px;
   margin-right: auto;
@@ -799,47 +857,59 @@ h1 {
   filter: brightness(1);
   transition: all 400ms ease-in-out;
 }
-.mainCommandButton:hover {
+.mainCommandButton:hover, .main2CommandButton:hover {
   cursor: pointer;
   filter: brightness(1.25);
   box-shadow: 0 0 25px #0000003E;
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
-  .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc {
+  .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc, .main2StartersCardDesc, .main2DishesCardDesc, .main2DessertsCardDesc {
     max-width: 245px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  .mainStartersCard, .mainDishesCard, .mainDessertsCard {
+  .mainStartersCard, .mainDishesCard, .mainDessertsCard, .main2StartersCard, .main2DishesCard, .main2DessertsCard {
     max-width: 730px;
   }
-  .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc {
+  .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc, .main2StartersCardDesc, .main2DishesCardDesc, .main2DessertsCardDesc {
     max-width: 250px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 2560px) {
-  /*.main{
-      display: grid;
-      align-items: center;
-   grid-template-columns: 1fr auto auto;
-      grid-template-areas: "starters dishes desserts"
-      &Starters{
-          grid-area: starters;
-      }
-      &Dishes{
-          grid-area: dishes;
-      }
-      &Desserts{
-          grid-area: desserts;
-      }
-      &Starters, &Dishes, &Desserts{
-          width: auto;
-          &Desc{
-              max-width: 250px;
-          }
-      }
-  }*/
+  .mainMenu, .main2Menu {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "starters dishes desserts";
+  }
+  .mainStarters, .main2Starters {
+    grid-area: starters;
+  }
+  .mainDishes, .main2Dishes {
+    grid-area: dishes;
+  }
+  .mainDesserts, .main2Desserts {
+    grid-area: desserts;
+  }
+  .mainStarters, .mainDishes, .mainDesserts, .main2Starters, .main2Dishes, .main2Desserts {
+    width: 90%;
+  }
+  .mainStartersDesc, .mainDishesDesc, .mainDessertsDesc, .main2StartersDesc, .main2DishesDesc, .main2DessertsDesc {
+    max-width: 250px;
+  }
+
+  .main {
+    height: 730px;
+  }
+
+  .main2 {
+    height: 830px;
+  }
+
+  .main2 .mainMenu .mainDishes, .main2 .mainMenu .mainDesserts {
+    margin-top: -140px;
+  }
 }
 @keyframes menuAnimation {
   0% {

@@ -1,0 +1,57 @@
+.loading{
+	height: 100%;
+	width: 100%;
+	max-width: 1440px;
+	background-color: $colour-white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	animation: loadingScreenBckgrnd 4000ms ease-out forwards;
+	z-index: 100;
+	position: fixed;
+	&Screen{
+		width: 100%;
+		padding: 0;
+		&Svg{
+		    height: 100vh;
+		    width: 100%;
+		    font-size: 100rem;
+		    & path{
+			    fill: transparent;
+			    stroke-width: 2;
+			    stroke: $colour-nmbrs;
+			    animation: loadingScreenTxt 2000ms 400ms linear forwards;
+            }
+		}
+	}
+}
+@keyframes loadingScreenBckgrnd{
+	0%{
+		opacity: 1;
+		visibility: visible;
+	}
+	80%{
+		opacity: 0.8;
+	}
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+@keyframes loadingScreenTxt{
+    0%{
+		opacity: 1;
+	}
+	25%{
+		opacity: .5;
+	}
+	50%{
+		opacity: 1;
+	}
+    75%{
+        opacity: .5;
+    }
+	100% {
+		opacity: 1;
+	}
+}

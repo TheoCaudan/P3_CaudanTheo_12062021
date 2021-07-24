@@ -1,5 +1,5 @@
 @import "../utils/variables";
-.main{
+.main, .main2{
     display: block;
     width: 100%;
     max-width: 1440px;
@@ -287,7 +287,7 @@
     }
 } 
 @media screen and (min-width: 375px) and (max-width: 425px){
-    .main{
+    .main, .main2{
         &Starters, &Dishes, &Desserts{
             &Card{
                 &Desc{
@@ -298,7 +298,7 @@
     }
 }
 @media screen and (min-width: 426px) and (max-width: 768px){
-    .main{
+    .main, .main2{
         &Starters, &Dishes, &Desserts{
             &Card{
                 max-width: 730px;
@@ -310,12 +310,13 @@
     }
 }
 @media screen and (min-width:769px) and (max-width: 2560px){
-    // peut-etre ajouter un wrapper ?
-    /*.main{
-        display: grid;
-        align-items: center;
-	    grid-template-columns: 1fr auto auto;
-        grid-template-areas: "starters dishes desserts"
+    .main, .main2{
+        &Menu{
+            display: grid;
+            align-items: center;
+	        grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "starters dishes desserts";
+        }
         &Starters{
             grid-area: starters;
         }
@@ -326,12 +327,19 @@
             grid-area: desserts;
         }
         &Starters, &Dishes, &Desserts{
-            width: auto;
+            width: 90%;
             &Desc{
                 max-width: 250px;
             }
         }
-    }*/
+    }
+    .main{ height: 730px }
+    .main2{ height: 830px }
+    .main2{
+        .mainMenu{
+            .mainDishes, .mainDesserts{ margin-top: -140px }
+        }
+    }
 }
 
 @keyframes menuAnimation {
