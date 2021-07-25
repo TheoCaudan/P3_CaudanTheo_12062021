@@ -687,51 +687,6 @@ h1 {
 .mainStarters:nth-child(10), .mainDishes:nth-child(10), .mainDesserts:nth-child(10), .main2Starters:nth-child(10), .main2Dishes:nth-child(10), .main2Desserts:nth-child(10) {
   animation-delay: 4000ms;
 }
-.mainStarters:nth-child(11), .mainDishes:nth-child(11), .mainDesserts:nth-child(11), .main2Starters:nth-child(11), .main2Dishes:nth-child(11), .main2Desserts:nth-child(11) {
-  animation-delay: 4400ms;
-}
-.mainStarters:nth-child(12), .mainDishes:nth-child(12), .mainDesserts:nth-child(12), .main2Starters:nth-child(12), .main2Dishes:nth-child(12), .main2Desserts:nth-child(12) {
-  animation-delay: 4800ms;
-}
-.mainStarters:nth-child(13), .mainDishes:nth-child(13), .mainDesserts:nth-child(13), .main2Starters:nth-child(13), .main2Dishes:nth-child(13), .main2Desserts:nth-child(13) {
-  animation-delay: 5200ms;
-}
-.mainStarters:nth-child(14), .mainDishes:nth-child(14), .mainDesserts:nth-child(14), .main2Starters:nth-child(14), .main2Dishes:nth-child(14), .main2Desserts:nth-child(14) {
-  animation-delay: 5600ms;
-}
-.mainStarters:nth-child(15), .mainDishes:nth-child(15), .mainDesserts:nth-child(15), .main2Starters:nth-child(15), .main2Dishes:nth-child(15), .main2Desserts:nth-child(15) {
-  animation-delay: 6000ms;
-}
-.mainStarters:nth-child(16), .mainDishes:nth-child(16), .mainDesserts:nth-child(16), .main2Starters:nth-child(16), .main2Dishes:nth-child(16), .main2Desserts:nth-child(16) {
-  animation-delay: 6400ms;
-}
-.mainStarters:nth-child(17), .mainDishes:nth-child(17), .mainDesserts:nth-child(17), .main2Starters:nth-child(17), .main2Dishes:nth-child(17), .main2Desserts:nth-child(17) {
-  animation-delay: 6800ms;
-}
-.mainStarters:nth-child(18), .mainDishes:nth-child(18), .mainDesserts:nth-child(18), .main2Starters:nth-child(18), .main2Dishes:nth-child(18), .main2Desserts:nth-child(18) {
-  animation-delay: 7200ms;
-}
-.mainStarters:nth-child(19), .mainDishes:nth-child(19), .mainDesserts:nth-child(19), .main2Starters:nth-child(19), .main2Dishes:nth-child(19), .main2Desserts:nth-child(19) {
-  animation-delay: 7600ms;
-}
-.mainStarters:nth-child(20), .mainDishes:nth-child(20), .mainDesserts:nth-child(20), .main2Starters:nth-child(20), .main2Dishes:nth-child(20), .main2Desserts:nth-child(20) {
-  animation-delay: 8000ms;
-}
-.mainStarters:nth-child(21), .mainDishes:nth-child(21), .mainDesserts:nth-child(21), .main2Starters:nth-child(21), .main2Dishes:nth-child(21), .main2Desserts:nth-child(21) {
-  animation-delay: 8400ms;
-}
-.mainStarters:nth-child(22), .mainDishes:nth-child(22), .mainDesserts:nth-child(22), .main2Starters:nth-child(22), .main2Dishes:nth-child(22), .main2Desserts:nth-child(22) {
-  animation-delay: 8800ms;
-}
-.mainStarters:nth-child(23), .mainDishes:nth-child(23), .mainDesserts:nth-child(23), .main2Starters:nth-child(23), .main2Dishes:nth-child(23), .main2Desserts:nth-child(23) {
-  animation-delay: 9200ms;
-}
-.mainStarters:nth-child(24), .mainDishes:nth-child(24), .mainDesserts:nth-child(24), .main2Starters:nth-child(24), .main2Dishes:nth-child(24), .main2Desserts:nth-child(24) {
-  animation-delay: 9600ms;
-}
-.mainStarters:nth-child(25), .mainDishes:nth-child(25), .mainDesserts:nth-child(25), .main2Starters:nth-child(25), .main2Dishes:nth-child(25), .main2Desserts:nth-child(25) {
-  animation-delay: 10000ms;
-}
 .mainStartersTitle1, .mainStartersTitle2, .mainStartersTitle3, .mainStartersTitle4, .mainDishesTitle1, .mainDishesTitle2, .mainDishesTitle3, .mainDishesTitle4, .mainDessertsTitle1, .mainDessertsTitle2, .mainDessertsTitle3, .mainDessertsTitle4, .main2StartersTitle1, .main2StartersTitle2, .main2StartersTitle3, .main2StartersTitle4, .main2DishesTitle1, .main2DishesTitle2, .main2DishesTitle3, .main2DishesTitle4, .main2DessertsTitle1, .main2DessertsTitle2, .main2DessertsTitle3, .main2DessertsTitle4 {
   font-size: medium;
   text-decoration: none;
@@ -747,7 +702,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
-.mainStartersCard, .mainDishesCard, .mainDessertsCard, .main2StartersCard, .main2DishesCard, .main2DessertsCard {
+.mainStartersCardWrapper2 .mainStartersCard, .mainStartersCardWrapper2 .mainDishesCard, .mainStartersCardWrapper2 .mainDessertsCard, .mainDishesCardWrapper2 .mainStartersCard, .mainDishesCardWrapper2 .mainDishesCard, .mainDishesCardWrapper2 .mainDessertsCard, .mainDessertsCardWrapper2 .mainStartersCard, .mainDessertsCardWrapper2 .mainDishesCard, .mainDessertsCardWrapper2 .mainDessertsCard, .main2StartersCardWrapper2 .mainStartersCard, .main2StartersCardWrapper2 .mainDishesCard, .main2StartersCardWrapper2 .mainDessertsCard, .main2DishesCardWrapper2 .mainStartersCard, .main2DishesCardWrapper2 .mainDishesCard, .main2DishesCardWrapper2 .mainDessertsCard, .main2DessertsCardWrapper2 .mainStartersCard, .main2DessertsCardWrapper2 .mainDishesCard, .main2DessertsCardWrapper2 .mainDessertsCard {
   border-radius: 20px;
   box-shadow: 0 0 14px #0000002E;
   cursor: pointer;
@@ -755,12 +710,12 @@ h1 {
   background-color: #ffffff;
   overflow: hidden;
   display: grid;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   max-width: 380px;
   margin: 0px 20px;
 }
-.mainStartersCardTitle, .mainDishesCardTitle, .mainDessertsCardTitle, .main2StartersCardTitle, .main2DishesCardTitle, .main2DessertsCardTitle {
+.mainStartersCardWrapper2 .mainStartersCardTitle, .mainStartersCardWrapper2 .mainDishesCardTitle, .mainStartersCardWrapper2 .mainDessertsCardTitle, .mainDishesCardWrapper2 .mainStartersCardTitle, .mainDishesCardWrapper2 .mainDishesCardTitle, .mainDishesCardWrapper2 .mainDessertsCardTitle, .mainDessertsCardWrapper2 .mainStartersCardTitle, .mainDessertsCardWrapper2 .mainDishesCardTitle, .mainDessertsCardWrapper2 .mainDessertsCardTitle, .main2StartersCardWrapper2 .mainStartersCardTitle, .main2StartersCardWrapper2 .mainDishesCardTitle, .main2StartersCardWrapper2 .mainDessertsCardTitle, .main2DishesCardWrapper2 .mainStartersCardTitle, .main2DishesCardWrapper2 .mainDishesCardTitle, .main2DishesCardWrapper2 .mainDessertsCardTitle, .main2DessertsCardWrapper2 .mainStartersCardTitle, .main2DessertsCardWrapper2 .mainDishesCardTitle, .main2DessertsCardWrapper2 .mainDessertsCardTitle {
   font-family: "roboto";
   font-size: medium;
   overflow: hidden;
@@ -771,7 +726,7 @@ h1 {
   padding-top: 0;
   margin-top: 20px;
 }
-.mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc, .main2StartersCardDesc, .main2DishesCardDesc, .main2DessertsCardDesc {
+.mainStartersCardWrapper2 .mainStartersCardDesc, .mainStartersCardWrapper2 .mainDishesCardDesc, .mainStartersCardWrapper2 .mainDessertsCardDesc, .mainDishesCardWrapper2 .mainStartersCardDesc, .mainDishesCardWrapper2 .mainDishesCardDesc, .mainDishesCardWrapper2 .mainDessertsCardDesc, .mainDessertsCardWrapper2 .mainStartersCardDesc, .mainDessertsCardWrapper2 .mainDishesCardDesc, .mainDessertsCardWrapper2 .mainDessertsCardDesc, .main2StartersCardWrapper2 .mainStartersCardDesc, .main2StartersCardWrapper2 .mainDishesCardDesc, .main2StartersCardWrapper2 .mainDessertsCardDesc, .main2DishesCardWrapper2 .mainStartersCardDesc, .main2DishesCardWrapper2 .mainDishesCardDesc, .main2DishesCardWrapper2 .mainDessertsCardDesc, .main2DessertsCardWrapper2 .mainStartersCardDesc, .main2DessertsCardWrapper2 .mainDishesCardDesc, .main2DessertsCardWrapper2 .mainDessertsCardDesc {
   font-family: "roboto";
   font-weight: 200;
   overflow: hidden;
@@ -782,10 +737,10 @@ h1 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.mainStartersCardTitle, .mainStartersCardDesc, .mainDishesCardTitle, .mainDishesCardDesc, .mainDessertsCardTitle, .mainDessertsCardDesc, .main2StartersCardTitle, .main2StartersCardDesc, .main2DishesCardTitle, .main2DishesCardDesc, .main2DessertsCardTitle, .main2DessertsCardDesc {
+.mainStartersCardWrapper2 .mainStartersCardTitle, .mainStartersCardWrapper2 .mainStartersCardDesc, .mainStartersCardWrapper2 .mainDishesCardTitle, .mainStartersCardWrapper2 .mainDishesCardDesc, .mainStartersCardWrapper2 .mainDessertsCardTitle, .mainStartersCardWrapper2 .mainDessertsCardDesc, .mainDishesCardWrapper2 .mainStartersCardTitle, .mainDishesCardWrapper2 .mainStartersCardDesc, .mainDishesCardWrapper2 .mainDishesCardTitle, .mainDishesCardWrapper2 .mainDishesCardDesc, .mainDishesCardWrapper2 .mainDessertsCardTitle, .mainDishesCardWrapper2 .mainDessertsCardDesc, .mainDessertsCardWrapper2 .mainStartersCardTitle, .mainDessertsCardWrapper2 .mainStartersCardDesc, .mainDessertsCardWrapper2 .mainDishesCardTitle, .mainDessertsCardWrapper2 .mainDishesCardDesc, .mainDessertsCardWrapper2 .mainDessertsCardTitle, .mainDessertsCardWrapper2 .mainDessertsCardDesc, .main2StartersCardWrapper2 .mainStartersCardTitle, .main2StartersCardWrapper2 .mainStartersCardDesc, .main2StartersCardWrapper2 .mainDishesCardTitle, .main2StartersCardWrapper2 .mainDishesCardDesc, .main2StartersCardWrapper2 .mainDessertsCardTitle, .main2StartersCardWrapper2 .mainDessertsCardDesc, .main2DishesCardWrapper2 .mainStartersCardTitle, .main2DishesCardWrapper2 .mainStartersCardDesc, .main2DishesCardWrapper2 .mainDishesCardTitle, .main2DishesCardWrapper2 .mainDishesCardDesc, .main2DishesCardWrapper2 .mainDessertsCardTitle, .main2DishesCardWrapper2 .mainDessertsCardDesc, .main2DessertsCardWrapper2 .mainStartersCardTitle, .main2DessertsCardWrapper2 .mainStartersCardDesc, .main2DessertsCardWrapper2 .mainDishesCardTitle, .main2DessertsCardWrapper2 .mainDishesCardDesc, .main2DessertsCardWrapper2 .mainDessertsCardTitle, .main2DessertsCardWrapper2 .mainDessertsCardDesc {
   padding-left: 10px;
 }
-.mainStartersCardPrice, .mainDishesCardPrice, .mainDessertsCardPrice, .main2StartersCardPrice, .main2DishesCardPrice, .main2DessertsCardPrice {
+.mainStartersCardWrapper2 .mainStartersCardPrice, .mainStartersCardWrapper2 .mainDishesCardPrice, .mainStartersCardWrapper2 .mainDessertsCardPrice, .mainDishesCardWrapper2 .mainStartersCardPrice, .mainDishesCardWrapper2 .mainDishesCardPrice, .mainDishesCardWrapper2 .mainDessertsCardPrice, .mainDessertsCardWrapper2 .mainStartersCardPrice, .mainDessertsCardWrapper2 .mainDishesCardPrice, .mainDessertsCardWrapper2 .mainDessertsCardPrice, .main2StartersCardWrapper2 .mainStartersCardPrice, .main2StartersCardWrapper2 .mainDishesCardPrice, .main2StartersCardWrapper2 .mainDessertsCardPrice, .main2DishesCardWrapper2 .mainStartersCardPrice, .main2DishesCardWrapper2 .mainDishesCardPrice, .main2DishesCardWrapper2 .mainDessertsCardPrice, .main2DessertsCardWrapper2 .mainStartersCardPrice, .main2DessertsCardWrapper2 .mainDishesCardPrice, .main2DessertsCardWrapper2 .mainDessertsCardPrice {
   display: block;
   font-family: "roboto";
   font-size: small;
@@ -802,7 +757,7 @@ h1 {
   position: relative;
   bottom: 25px;
 }
-.mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck, .main2StartersCardCheck, .main2DishesCardCheck, .main2DessertsCardCheck {
+.mainStartersCardWrapper2 .mainStartersCardCheck, .mainStartersCardWrapper2 .mainDishesCardCheck, .mainStartersCardWrapper2 .mainDessertsCardCheck, .mainDishesCardWrapper2 .mainStartersCardCheck, .mainDishesCardWrapper2 .mainDishesCardCheck, .mainDishesCardWrapper2 .mainDessertsCardCheck, .mainDessertsCardWrapper2 .mainStartersCardCheck, .mainDessertsCardWrapper2 .mainDishesCardCheck, .mainDessertsCardWrapper2 .mainDessertsCardCheck, .main2StartersCardWrapper2 .mainStartersCardCheck, .main2StartersCardWrapper2 .mainDishesCardCheck, .main2StartersCardWrapper2 .mainDessertsCardCheck, .main2DishesCardWrapper2 .mainStartersCardCheck, .main2DishesCardWrapper2 .mainDishesCardCheck, .main2DishesCardWrapper2 .mainDessertsCardCheck, .main2DessertsCardWrapper2 .mainStartersCardCheck, .main2DessertsCardWrapper2 .mainDishesCardCheck, .main2DessertsCardWrapper2 .mainDessertsCardCheck {
   background-color: #99e2d0;
   color: #ffffff;
   height: 100%;
@@ -814,24 +769,24 @@ h1 {
   transition: all 400ms ease-in-out;
   transform: translateX(100%);
 }
-.mainStartersCardCheckIcon, .mainDishesCardCheckIcon, .mainDessertsCardCheckIcon, .main2StartersCardCheckIcon, .main2DishesCardCheckIcon, .main2DessertsCardCheckIcon {
+.mainStartersCardWrapper2 .mainStartersCardCheckIcon, .mainStartersCardWrapper2 .mainDishesCardCheckIcon, .mainStartersCardWrapper2 .mainDessertsCardCheckIcon, .mainDishesCardWrapper2 .mainStartersCardCheckIcon, .mainDishesCardWrapper2 .mainDishesCardCheckIcon, .mainDishesCardWrapper2 .mainDessertsCardCheckIcon, .mainDessertsCardWrapper2 .mainStartersCardCheckIcon, .mainDessertsCardWrapper2 .mainDishesCardCheckIcon, .mainDessertsCardWrapper2 .mainDessertsCardCheckIcon, .main2StartersCardWrapper2 .mainStartersCardCheckIcon, .main2StartersCardWrapper2 .mainDishesCardCheckIcon, .main2StartersCardWrapper2 .mainDessertsCardCheckIcon, .main2DishesCardWrapper2 .mainStartersCardCheckIcon, .main2DishesCardWrapper2 .mainDishesCardCheckIcon, .main2DishesCardWrapper2 .mainDessertsCardCheckIcon, .main2DessertsCardWrapper2 .mainStartersCardCheckIcon, .main2DessertsCardWrapper2 .mainDishesCardCheckIcon, .main2DessertsCardWrapper2 .mainDessertsCardCheckIcon {
   font-size: 1.5rem;
   transform: rotate(-360deg);
   transition: all 400ms 100ms ease;
   opacity: 0;
 }
-.mainStartersCardCheckIcon:hover, .mainDishesCardCheckIcon:hover, .mainDessertsCardCheckIcon:hover, .main2StartersCardCheckIcon:hover, .main2DishesCardCheckIcon:hover, .main2DessertsCardCheckIcon:hover {
-  transform: rotate(0deg);
-  opacity: 1;
-}
-.mainStartersCardCheck:hover, .mainDishesCardCheck:hover, .mainDessertsCardCheck:hover, .main2StartersCardCheck:hover, .main2DishesCardCheck:hover, .main2DessertsCardCheck:hover {
-  transform: translateX(0%);
-  width: 4rem;
-}
-.mainStartersCard:hover, .mainDishesCard:hover, .mainDessertsCard:hover, .main2StartersCard:hover, .main2DishesCard:hover, .main2DessertsCard:hover {
+.mainStartersCardWrapper2 .mainStartersCard:hover, .mainStartersCardWrapper2 .mainDishesCard:hover, .mainStartersCardWrapper2 .mainDessertsCard:hover, .mainDishesCardWrapper2 .mainStartersCard:hover, .mainDishesCardWrapper2 .mainDishesCard:hover, .mainDishesCardWrapper2 .mainDessertsCard:hover, .mainDessertsCardWrapper2 .mainStartersCard:hover, .mainDessertsCardWrapper2 .mainDishesCard:hover, .mainDessertsCardWrapper2 .mainDessertsCard:hover, .main2StartersCardWrapper2 .mainStartersCard:hover, .main2StartersCardWrapper2 .mainDishesCard:hover, .main2StartersCardWrapper2 .mainDessertsCard:hover, .main2DishesCardWrapper2 .mainStartersCard:hover, .main2DishesCardWrapper2 .mainDishesCard:hover, .main2DishesCardWrapper2 .mainDessertsCard:hover, .main2DessertsCardWrapper2 .mainStartersCard:hover, .main2DessertsCardWrapper2 .mainDishesCard:hover, .main2DessertsCardWrapper2 .mainDessertsCard:hover {
   cursor: pointer;
   filter: brightness(1.25);
   box-shadow: 0 0 25px #0000003E;
+}
+.mainStartersCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .mainStartersCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .mainStartersCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .mainStartersCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .mainStartersCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .mainStartersCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .mainStartersCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .mainDishesCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .mainDishesCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .mainDishesCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .mainDishesCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .mainDishesCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .mainDishesCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .mainDishesCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .mainDessertsCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .mainDessertsCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .main2StartersCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .main2StartersCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .main2StartersCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .main2StartersCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .main2StartersCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .main2StartersCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .main2StartersCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .main2StartersCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .main2StartersCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .main2DishesCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .main2DishesCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .main2DishesCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .main2DishesCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .main2DishesCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .main2DishesCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .main2DishesCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .main2DishesCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .main2DishesCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .main2DessertsCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .main2DessertsCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .main2DessertsCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .main2DessertsCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .main2DessertsCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .main2DessertsCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .main2DessertsCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .main2DessertsCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .main2DessertsCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck {
+  transform: translateX(0);
+  width: 4rem;
+}
+.mainStartersCardWrapper2 .mainStartersCard:hover .mainStartersCardCheckIcon, .mainStartersCardWrapper2 .mainStartersCard:hover .mainDishesCardCheckIcon, .mainStartersCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheckIcon, .mainStartersCardWrapper2 .mainDishesCard:hover .mainStartersCardCheckIcon, .mainStartersCardWrapper2 .mainDishesCard:hover .mainDishesCardCheckIcon, .mainStartersCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheckIcon, .mainStartersCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheckIcon, .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheckIcon, .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheckIcon, .mainDishesCardWrapper2 .mainStartersCard:hover .mainStartersCardCheckIcon, .mainDishesCardWrapper2 .mainStartersCard:hover .mainDishesCardCheckIcon, .mainDishesCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheckIcon, .mainDishesCardWrapper2 .mainDishesCard:hover .mainStartersCardCheckIcon, .mainDishesCardWrapper2 .mainDishesCard:hover .mainDishesCardCheckIcon, .mainDishesCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheckIcon, .mainDishesCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheckIcon, .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheckIcon, .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheckIcon, .mainDessertsCardWrapper2 .mainStartersCard:hover .mainStartersCardCheckIcon, .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDishesCardCheckIcon, .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheckIcon, .mainDessertsCardWrapper2 .mainDishesCard:hover .mainStartersCardCheckIcon, .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDishesCardCheckIcon, .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheckIcon, .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheckIcon, .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheckIcon, .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheckIcon, .main2StartersCardWrapper2 .mainStartersCard:hover .mainStartersCardCheckIcon, .main2StartersCardWrapper2 .mainStartersCard:hover .mainDishesCardCheckIcon, .main2StartersCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheckIcon, .main2StartersCardWrapper2 .mainDishesCard:hover .mainStartersCardCheckIcon, .main2StartersCardWrapper2 .mainDishesCard:hover .mainDishesCardCheckIcon, .main2StartersCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheckIcon, .main2StartersCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheckIcon, .main2StartersCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheckIcon, .main2StartersCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheckIcon, .main2DishesCardWrapper2 .mainStartersCard:hover .mainStartersCardCheckIcon, .main2DishesCardWrapper2 .mainStartersCard:hover .mainDishesCardCheckIcon, .main2DishesCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheckIcon, .main2DishesCardWrapper2 .mainDishesCard:hover .mainStartersCardCheckIcon, .main2DishesCardWrapper2 .mainDishesCard:hover .mainDishesCardCheckIcon, .main2DishesCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheckIcon, .main2DishesCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheckIcon, .main2DishesCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheckIcon, .main2DishesCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheckIcon, .main2DessertsCardWrapper2 .mainStartersCard:hover .mainStartersCardCheckIcon, .main2DessertsCardWrapper2 .mainStartersCard:hover .mainDishesCardCheckIcon, .main2DessertsCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheckIcon, .main2DessertsCardWrapper2 .mainDishesCard:hover .mainStartersCardCheckIcon, .main2DessertsCardWrapper2 .mainDishesCard:hover .mainDishesCardCheckIcon, .main2DessertsCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheckIcon, .main2DessertsCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheckIcon, .main2DessertsCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheckIcon, .main2DessertsCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheckIcon {
+  transform: rotate(0);
+  opacity: 1;
 }
 .mainCommand, .main2Command {
   margin-top: 20px;
@@ -864,15 +819,15 @@ h1 {
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
-  .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc, .main2StartersCardDesc, .main2DishesCardDesc, .main2DessertsCardDesc {
+  .mainStartersCardWrapper2 .mainStartersCardDesc, .mainStartersCardWrapper2 .mainDishesCardDesc, .mainStartersCardWrapper2 .mainDessertsCardDesc, .mainDishesCardWrapper2 .mainStartersCardDesc, .mainDishesCardWrapper2 .mainDishesCardDesc, .mainDishesCardWrapper2 .mainDessertsCardDesc, .mainDessertsCardWrapper2 .mainStartersCardDesc, .mainDessertsCardWrapper2 .mainDishesCardDesc, .mainDessertsCardWrapper2 .mainDessertsCardDesc, .main2StartersCardWrapper2 .mainStartersCardDesc, .main2StartersCardWrapper2 .mainDishesCardDesc, .main2StartersCardWrapper2 .mainDessertsCardDesc, .main2DishesCardWrapper2 .mainStartersCardDesc, .main2DishesCardWrapper2 .mainDishesCardDesc, .main2DishesCardWrapper2 .mainDessertsCardDesc, .main2DessertsCardWrapper2 .mainStartersCardDesc, .main2DessertsCardWrapper2 .mainDishesCardDesc, .main2DessertsCardWrapper2 .mainDessertsCardDesc {
     max-width: 245px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  .mainStartersCard, .mainDishesCard, .mainDessertsCard, .main2StartersCard, .main2DishesCard, .main2DessertsCard {
+  .mainStartersCardWrapper2 .mainStartersCard, .mainStartersCardWrapper2 .mainDishesCard, .mainStartersCardWrapper2 .mainDessertsCard, .mainDishesCardWrapper2 .mainStartersCard, .mainDishesCardWrapper2 .mainDishesCard, .mainDishesCardWrapper2 .mainDessertsCard, .mainDessertsCardWrapper2 .mainStartersCard, .mainDessertsCardWrapper2 .mainDishesCard, .mainDessertsCardWrapper2 .mainDessertsCard, .main2StartersCardWrapper2 .mainStartersCard, .main2StartersCardWrapper2 .mainDishesCard, .main2StartersCardWrapper2 .mainDessertsCard, .main2DishesCardWrapper2 .mainStartersCard, .main2DishesCardWrapper2 .mainDishesCard, .main2DishesCardWrapper2 .mainDessertsCard, .main2DessertsCardWrapper2 .mainStartersCard, .main2DessertsCardWrapper2 .mainDishesCard, .main2DessertsCardWrapper2 .mainDessertsCard {
     max-width: 730px;
   }
-  .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc, .main2StartersCardDesc, .main2DishesCardDesc, .main2DessertsCardDesc {
+  .mainStartersCardWrapper2 .mainStartersCardDesc, .mainStartersCardWrapper2 .mainDishesCardDesc, .mainStartersCardWrapper2 .mainDessertsCardDesc, .mainDishesCardWrapper2 .mainStartersCardDesc, .mainDishesCardWrapper2 .mainDishesCardDesc, .mainDishesCardWrapper2 .mainDessertsCardDesc, .mainDessertsCardWrapper2 .mainStartersCardDesc, .mainDessertsCardWrapper2 .mainDishesCardDesc, .mainDessertsCardWrapper2 .mainDessertsCardDesc, .main2StartersCardWrapper2 .mainStartersCardDesc, .main2StartersCardWrapper2 .mainDishesCardDesc, .main2StartersCardWrapper2 .mainDessertsCardDesc, .main2DishesCardWrapper2 .mainStartersCardDesc, .main2DishesCardWrapper2 .mainDishesCardDesc, .main2DishesCardWrapper2 .mainDessertsCardDesc, .main2DessertsCardWrapper2 .mainStartersCardDesc, .main2DessertsCardWrapper2 .mainDishesCardDesc, .main2DessertsCardWrapper2 .mainDessertsCardDesc {
     max-width: 250px;
   }
 }
