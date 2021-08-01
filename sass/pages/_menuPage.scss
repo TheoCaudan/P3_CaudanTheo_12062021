@@ -28,10 +28,15 @@
             right: 1%;
             transform: scale(1);
             transition: transform 400ms ease-out;
-        }
-        &Grade:hover{
-            cursor: pointer;
-            transform: scale(1.1);
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+            &Heart{
+                .mainStartersCard:hover &{
+                    color: linear-gradient(170deg, $colour-heart-bot 0%, $colour-heart-top 100%);
+                }
+            }
         }
     }
     &Starters{
@@ -188,7 +193,7 @@
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         font-weight: bold;
-                        width: 100%;
+                        width: 90%;
                         padding-top: 0;
                         margin-top: 20px;
                     }
@@ -199,7 +204,7 @@
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         font-size: small;
-                        max-width: 225px;
+                        max-width: 74%;
                         margin-top: 10px;
                         margin-bottom: 20px;
                     }
@@ -224,38 +229,41 @@
                         bottom: 25px;
                     }
                     &Check{
+                        position: relative;
+                        right: 0px;
+                        top: 0px;
                         background-color: #99e2d0;
                         color: #ffffff;
                         height: 100%;
                         width: 0;
-                        display: flex;
+                        display: block;
                         justify-content: center;
                         align-items: center;
                         border-radius: 0 20px 20px 0;
                         transition: all 400ms ease-in-out;
                         transform: translateX(100%);
+                        .mainStartersCard:hover &, .mainDishesCard:hover &, .mainDishesCard:hover &{
+                            transform: translateX(0);
+                            width: 4rem;
+                        }
                         &Icon{
                             font-size: 1.5rem;
                             transform: rotate(-360deg);
                             transition: all 400ms 100ms ease;
                             opacity: 0;
+                            .mainStartersCard:hover &, .mainDishesCard:hover &, .mainDishesCard:hover &{
+                                transform: rotate(0);
+                                opacity: 1;
+                            }
                         }
                     }
                     &:hover{
                         cursor: pointer;
-                    filter: brightness(1.25);
-                    box-shadow: 0 0 25px #0000003E;
-                    .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
-                        transform: translateX(0);
-                        width: 4rem;
-                    }
-                    .mainStartersCardCheckIcon, .mainDishesCardCheckIcon, .mainDessertsCardCheckIcon{
-                        transform: rotate(0);
-                        opacity: 1;
+                        filter: brightness(1.25);
+                        box-shadow: 0 0 25px #0000003E;
                     }
                 }
             } 
-        }
         }
     }
     &Command{
@@ -288,32 +296,12 @@
         }
     }
 }
-@media screen and (min-width: 375px) and (max-width: 425px){
-    .main, .main2{
-        &Starters, &Dishes, &Desserts{
-            &CardWrapper{
-                &2{
-                    .mainStartersCard, .mainDishesCard, .mainDessertsCard{
-                        &Desc{
-                            max-width: 245px;
-                        }
-                    }
-                }    
-            }
-        }
-    }
-}
 @media screen and (min-width: 426px) and (max-width: 768px){
     .main, .main2{
         &Starters, &Dishes, &Desserts{
             &CardWrapper{
                 &2{
-                    .mainStartersCard, .mainDishesCard, .mainDessertsCard{
-                        max-width: 730px;
-                        &Desc{
-                            max-width: 250px;
-                        }
-                    }
+                    .mainStartersCard, .mainDishesCard, .mainDessertsCard{ max-width: 730px }
                 }
             }
         }
@@ -336,12 +324,7 @@
         &Desserts{
             grid-area: desserts;
         }
-        &Starters, &Dishes, &Desserts{
-            width: 90%;
-            &Desc{
-                max-width: 250px;
-            }
-        }
+        &Starters, &Dishes, &Desserts{ width: 90% }
     }
     .main{ height: 730px }
     .main2{ height: 830px }
