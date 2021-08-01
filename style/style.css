@@ -748,12 +748,16 @@ h1 {
   text-align: end;
   padding-right: 20px;
   padding-bottom: 10px;
-  margin-right: 20px;
   width: 20px;
   margin-left: auto;
   margin-top: auto;
   position: relative;
   bottom: 25px;
+  right: 25px;
+  transition: all 400ms ease-in-out;
+}
+.mainStartersCard:hover .mainStartersCardWrapper2 .mainStartersCardPrice, .mainDishesCard:hover .mainStartersCardWrapper2 .mainStartersCardPrice, .mainDessertsCard:hover .mainStartersCardWrapper2 .mainStartersCardPrice, .mainStartersCard:hover .mainStartersCardWrapper2 .mainDishesCardPrice, .mainDishesCard:hover .mainStartersCardWrapper2 .mainDishesCardPrice, .mainDessertsCard:hover .mainStartersCardWrapper2 .mainDishesCardPrice, .mainStartersCard:hover .mainStartersCardWrapper2 .mainDessertsCardPrice, .mainDishesCard:hover .mainStartersCardWrapper2 .mainDessertsCardPrice, .mainDessertsCard:hover .mainStartersCardWrapper2 .mainDessertsCardPrice, .mainStartersCard:hover .mainDishesCardWrapper2 .mainStartersCardPrice, .mainDishesCard:hover .mainDishesCardWrapper2 .mainStartersCardPrice, .mainDessertsCard:hover .mainDishesCardWrapper2 .mainStartersCardPrice, .mainStartersCard:hover .mainDishesCardWrapper2 .mainDishesCardPrice, .mainDishesCard:hover .mainDishesCardWrapper2 .mainDishesCardPrice, .mainDessertsCard:hover .mainDishesCardWrapper2 .mainDishesCardPrice, .mainStartersCard:hover .mainDishesCardWrapper2 .mainDessertsCardPrice, .mainDishesCard:hover .mainDishesCardWrapper2 .mainDessertsCardPrice, .mainDessertsCard:hover .mainDishesCardWrapper2 .mainDessertsCardPrice, .mainStartersCard:hover .mainDessertsCardWrapper2 .mainStartersCardPrice, .mainDishesCard:hover .mainDessertsCardWrapper2 .mainStartersCardPrice, .mainDessertsCard:hover .mainDessertsCardWrapper2 .mainStartersCardPrice, .mainStartersCard:hover .mainDessertsCardWrapper2 .mainDishesCardPrice, .mainDishesCard:hover .mainDessertsCardWrapper2 .mainDishesCardPrice, .mainDessertsCard:hover .mainDessertsCardWrapper2 .mainDishesCardPrice, .mainStartersCard:hover .mainDessertsCardWrapper2 .mainDessertsCardPrice, .mainDishesCard:hover .mainDessertsCardWrapper2 .mainDessertsCardPrice, .mainDessertsCard:hover .mainDessertsCardWrapper2 .mainDessertsCardPrice, .mainStartersCard:hover .main2StartersCardWrapper2 .mainStartersCardPrice, .mainDishesCard:hover .main2StartersCardWrapper2 .mainStartersCardPrice, .mainDessertsCard:hover .main2StartersCardWrapper2 .mainStartersCardPrice, .mainStartersCard:hover .main2StartersCardWrapper2 .mainDishesCardPrice, .mainDishesCard:hover .main2StartersCardWrapper2 .mainDishesCardPrice, .mainDessertsCard:hover .main2StartersCardWrapper2 .mainDishesCardPrice, .mainStartersCard:hover .main2StartersCardWrapper2 .mainDessertsCardPrice, .mainDishesCard:hover .main2StartersCardWrapper2 .mainDessertsCardPrice, .mainDessertsCard:hover .main2StartersCardWrapper2 .mainDessertsCardPrice, .mainStartersCard:hover .main2DishesCardWrapper2 .mainStartersCardPrice, .mainDishesCard:hover .main2DishesCardWrapper2 .mainStartersCardPrice, .mainDessertsCard:hover .main2DishesCardWrapper2 .mainStartersCardPrice, .mainStartersCard:hover .main2DishesCardWrapper2 .mainDishesCardPrice, .mainDishesCard:hover .main2DishesCardWrapper2 .mainDishesCardPrice, .mainDessertsCard:hover .main2DishesCardWrapper2 .mainDishesCardPrice, .mainStartersCard:hover .main2DishesCardWrapper2 .mainDessertsCardPrice, .mainDishesCard:hover .main2DishesCardWrapper2 .mainDessertsCardPrice, .mainDessertsCard:hover .main2DishesCardWrapper2 .mainDessertsCardPrice, .mainStartersCard:hover .main2DessertsCardWrapper2 .mainStartersCardPrice, .mainDishesCard:hover .main2DessertsCardWrapper2 .mainStartersCardPrice, .mainDessertsCard:hover .main2DessertsCardWrapper2 .mainStartersCardPrice, .mainStartersCard:hover .main2DessertsCardWrapper2 .mainDishesCardPrice, .mainDishesCard:hover .main2DessertsCardWrapper2 .mainDishesCardPrice, .mainDessertsCard:hover .main2DessertsCardWrapper2 .mainDishesCardPrice, .mainStartersCard:hover .main2DessertsCardWrapper2 .mainDessertsCardPrice, .mainDishesCard:hover .main2DessertsCardWrapper2 .mainDessertsCardPrice, .mainDessertsCard:hover .main2DessertsCardWrapper2 .mainDessertsCardPrice {
+  right: 89px;
 }
 .mainStartersCardWrapper2 .mainStartersCardCheck, .mainStartersCardWrapper2 .mainDishesCardCheck, .mainStartersCardWrapper2 .mainDessertsCardCheck, .mainDishesCardWrapper2 .mainStartersCardCheck, .mainDishesCardWrapper2 .mainDishesCardCheck, .mainDishesCardWrapper2 .mainDessertsCardCheck, .mainDessertsCardWrapper2 .mainStartersCardCheck, .mainDessertsCardWrapper2 .mainDishesCardCheck, .mainDessertsCardWrapper2 .mainDessertsCardCheck, .main2StartersCardWrapper2 .mainStartersCardCheck, .main2StartersCardWrapper2 .mainDishesCardCheck, .main2StartersCardWrapper2 .mainDessertsCardCheck, .main2DishesCardWrapper2 .mainStartersCardCheck, .main2DishesCardWrapper2 .mainDishesCardCheck, .main2DishesCardWrapper2 .mainDessertsCardCheck, .main2DessertsCardWrapper2 .mainStartersCardCheck, .main2DessertsCardWrapper2 .mainDishesCardCheck, .main2DessertsCardWrapper2 .mainDessertsCardCheck {
   position: relative;
@@ -762,7 +766,7 @@ h1 {
   background-color: #99e2d0;
   color: #ffffff;
   height: 100%;
-  width: 0;
+  width: 4rem;
   display: block;
   justify-content: center;
   align-items: center;
@@ -788,6 +792,7 @@ h1 {
   cursor: pointer;
   filter: brightness(1.25);
   box-shadow: 0 0 25px #0000003E;
+  max-width: 316px;
 }
 .mainCommand, .main2Command {
   margin-top: 20px;

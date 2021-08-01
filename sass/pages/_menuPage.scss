@@ -220,12 +220,16 @@
                         text-align: end;
                         padding-right: 20px;
                         padding-bottom: 10px;
-                        margin-right: 20px;
                         width: 20px;
                         margin-left: auto;
                         margin-top: auto;
                         position: relative;
                         bottom: 25px;
+                        right: 25px;
+                        transition: all 400ms ease-in-out;
+                        .mainStartersCard:hover &, .mainDishesCard:hover &, .mainDessertsCard:hover &{
+                            right: 89px;
+                        }
                     }
                     &Check{
                         position: relative;
@@ -234,7 +238,7 @@
                         background-color: #99e2d0;
                         color: #ffffff;
                         height: 100%;
-                        width: 0;
+                        width: 4rem;
                         display: block;
                         justify-content: center;
                         align-items: center;
@@ -260,6 +264,7 @@
                         cursor: pointer;
                         filter: brightness(1.25);
                         box-shadow: 0 0 25px #0000003E;
+                        max-width: 316px;
                     }
                 }
             } 
