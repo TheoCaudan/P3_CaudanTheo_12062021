@@ -128,6 +128,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
