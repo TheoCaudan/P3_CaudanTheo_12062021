@@ -25,6 +25,16 @@ h1 {
   font-size: x-large;
 }
 
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: unset;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
 .loading {
   height: 100%;
   width: 100%;
@@ -559,7 +569,7 @@ h1 {
   top: 25px;
   right: 1%;
   transform: scale(1);
-  transition: transform 400ms;
+  transition: transform 400ms ease-out;
 }
 .mainHeaderGrade:hover, .main2HeaderGrade:hover {
   cursor: pointer;
@@ -671,21 +681,6 @@ h1 {
 }
 .mainStarters:nth-child(5), .mainDishes:nth-child(5), .mainDesserts:nth-child(5), .main2Starters:nth-child(5), .main2Dishes:nth-child(5), .main2Desserts:nth-child(5) {
   animation-delay: 2000ms;
-}
-.mainStarters:nth-child(6), .mainDishes:nth-child(6), .mainDesserts:nth-child(6), .main2Starters:nth-child(6), .main2Dishes:nth-child(6), .main2Desserts:nth-child(6) {
-  animation-delay: 2400ms;
-}
-.mainStarters:nth-child(7), .mainDishes:nth-child(7), .mainDesserts:nth-child(7), .main2Starters:nth-child(7), .main2Dishes:nth-child(7), .main2Desserts:nth-child(7) {
-  animation-delay: 2800ms;
-}
-.mainStarters:nth-child(8), .mainDishes:nth-child(8), .mainDesserts:nth-child(8), .main2Starters:nth-child(8), .main2Dishes:nth-child(8), .main2Desserts:nth-child(8) {
-  animation-delay: 3200ms;
-}
-.mainStarters:nth-child(9), .mainDishes:nth-child(9), .mainDesserts:nth-child(9), .main2Starters:nth-child(9), .main2Dishes:nth-child(9), .main2Desserts:nth-child(9) {
-  animation-delay: 3600ms;
-}
-.mainStarters:nth-child(10), .mainDishes:nth-child(10), .mainDesserts:nth-child(10), .main2Starters:nth-child(10), .main2Dishes:nth-child(10), .main2Desserts:nth-child(10) {
-  animation-delay: 4000ms;
 }
 .mainStartersTitle1, .mainStartersTitle2, .mainStartersTitle3, .mainStartersTitle4, .mainDishesTitle1, .mainDishesTitle2, .mainDishesTitle3, .mainDishesTitle4, .mainDessertsTitle1, .mainDessertsTitle2, .mainDessertsTitle3, .mainDessertsTitle4, .main2StartersTitle1, .main2StartersTitle2, .main2StartersTitle3, .main2StartersTitle4, .main2DishesTitle1, .main2DishesTitle2, .main2DishesTitle3, .main2DishesTitle4, .main2DessertsTitle1, .main2DessertsTitle2, .main2DessertsTitle3, .main2DessertsTitle4 {
   font-size: medium;

@@ -27,7 +27,7 @@
             top: 25px;
             right: 1%;
             transform: scale(1);
-            transition: transform 400ms;
+            transition: transform 400ms ease-out;
         }
         &Grade:hover{
             cursor: pointer;
@@ -147,7 +147,7 @@
         margin-right: auto;
         max-width: 1440px;
         width: 100%;
-        @for $i from 1 through 10 {
+        @for $i from 1 through 5 {
             &:nth-child(#{$i}) {
                 animation-delay: $i * 400ms;
             }
