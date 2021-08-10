@@ -19,13 +19,13 @@
             margin-bottom: 20px;
         }
         &Grade{
-            position: absolute;
+            position: relative;
             padding-right: 20px;
             padding-top: 20px;
             height: 22px;
             width: 22px;
-            top: 25px;
-            right: 1%;
+            top: -65px;
+            left: 90%;
             transform: scale(1);
             transition: transform 400ms ease-out;
             &:hover, &:focus{
@@ -191,14 +191,16 @@
                         box-shadow: 0 0 16px #0000003E;
                         cursor: pointer;
                         filter: brightness(1.25);
-                        .mainStartersCardCheckWrapper, .mainDishesCardCheckWrapper, .mainDessertsCardCheckWrapper,
-                        .mainStartersCardCheckWrapper2{
+                        .mainStartersCardCheckWrapper, .mainDishesCardCheckWrapper, .mainDessertsCardCheckWrapper{
+                            border: 2px solid $colour-bannew;
+                            filter: brightness(0.80);
                             transform: translate3d(0, 0, 0);
                             opacity: 1;                            
                             .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
-                                transform: rotate(0);
+                                transform: translate3d(25%, 0, 0);
                                 opacity: 1;
                                 &Icon{
+                                    animation: animRoule 800ms 100ms ease;
                                     opacity: 1;
                                 }
                             }
@@ -251,6 +253,7 @@
                     }
                     &CheckWrapper{
                         display: flex;
+                        overflow: hidden;
                         flex-direction: row-reverse;
                         justify-content: center;
                         height: 100%;
@@ -258,7 +261,8 @@
                         width: 25%;
                         top: 0;
                         right:0;
-                        transition: transform 300ms, opacity 400ms 100ms;
+                        transition: transform 400ms 200ms;
+                        transition: opacity 400ms 100ms;
                         background-color: $colour-bannew;
                         transform: translate3d(100%, 0, 0);
                         opacity: 0;
@@ -269,8 +273,8 @@
                         padding: 1rem;
                         opacity: 0;
                         transition: opacity 500ms 100ms;
-                        transition: transform 400ms 100ms;
-                        transform: rotate(-360deg);
+                        transition: transform 800ms 200ms;
+                        transform: translateX(100%);
                         background-color: $colour-bannew;
                         z-index: 3;
                         &Icon{
@@ -315,7 +319,45 @@
         }
     }
 }
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .main, .main2{
+        &Menu{
+            .mainStarters, .mainDishes, .mainDesserts{
+                &CardWrapper{
+                    &2{
+                        .mainStartersCard, .mainDishesCard, .mainDessertsCard{
+                            &:hover, &:focus{
+                                .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
+                                    transform: translate3d(10%, 0, 0);
+                                }
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+    }    
+}
 @media screen and (min-width:769px) and (max-width: 2560px){
+    @media screen and (min-width: 1024px) and (max-width: 1439px){
+        .main{
+            &Menu{
+                .mainStarters, .mainDishes, .mainDesserts{
+                    &CardWrapper{
+                        &2{
+                            .mainStartersCard, .mainDishesCard, .mainDessertsCard{
+                                &:hover, &:focus{
+                                    .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
+                                        transform: translate3d(10%, 0, 0);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }    
+    }
     .main, .main2{
         &Menu{
             display: grid;
@@ -360,3 +402,14 @@
         color: linear-gradient(170deg, $colour-heart-bot 0%, $colour-heart-top 100%);
     }
 }
+@keyframes animRoule{ 
+    0%{
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg); 
+    } 
+ } 
