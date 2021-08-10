@@ -28,14 +28,14 @@
             right: 1%;
             transform: scale(1);
             transition: transform 400ms ease-out;
-            &:hover{
+            &:hover, &:focus{
                 cursor: pointer;
                 transform: scale(1.1);
+                //animation: fillin 400ms ease;
             }
             &Heart{
-                .mainStartersCard:hover &{
-                    color: linear-gradient(170deg, $colour-heart-bot 0%, $colour-heart-top 100%);
-                }
+                //color: #f6f6f6;
+                text-shadow: 0 0 4px 4px #000;
             }
         }
     }
@@ -174,100 +174,112 @@
             margin-left: auto;
             margin-right: auto;
             &2{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 100%);
+                gap: 10px;                
                 .mainStartersCard, .mainDishesCard, .mainDessertsCard{
-                    border-radius: 20px;
-                    box-shadow: 0 0 14px #0000002E;
-                    cursor: pointer;
+                    position: relative;
                     height: 70px;
-                    background-color: #ffffff;
+                    background-color: $colour-white;
                     overflow: hidden;
-                    display: grid;
-                    gap: 10px;
-                    align-items: center;
-                    max-width: 380px;
-                    margin: 0px 20px;
+                    box-shadow: 0 0 14px #0000002E;  
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    &:hover, &:focus{
+                        box-shadow: 0 0 16px #0000003E;
+                        cursor: pointer;
+                        filter: brightness(1.25);
+                        .mainStartersCardCheckWrapper, .mainDishesCardCheckWrapper, .mainDessertsCardCheckWrapper{
+                            transform: translate3d(0, 0, 0);
+                            opacity: 1;                            
+                            .mainStartersCardCheck{
+                                transform: rotate(0);
+                                opacity: 1;
+                                &Icon{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .mainStartersCardPrice, .mainDishesCardPrice, .mainDessertsCardPrice{
+                            right: 25%;
+                        }
+                        .mainStartersCardTitle, .mainDishesCardTitle, .mainDessertsCardTitle{
+                            transform: translate3d(0, 0, 0);
+                        }
+                    }
                     &Title{
-                        font-family: "roboto";
+                        padding: 10px;
+                        font-family: "Roboto", sans-serif;
                         font-size: medium;
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         font-weight: bold;
-                        width: 90%;
-                        padding-top: 0;
-                        margin-top: 20px;
+                        transition: transform 300ms;
+                        transform: translate3d(0, 0, 0);
+                        max-width: 90%;
                     }
                     &Desc{
                         font-family: "roboto";
                         font-weight: 200;
                         overflow: hidden;
-                        white-space: nowrap;
+                        white-space: wrap;
                         text-overflow: ellipsis;
                         font-size: small;
                         max-width: 74%;
-                        margin-top: 10px;
-                        margin-bottom: 20px;
-                    }
-                    &Title, &Desc{
+                        position: absolute;
+                        z-index: 1;
                         padding-left: 10px;
                     }
                     &Price{
                         display: block;
                         font-family: "roboto";
                         font-size: small;
-                        align-self: end;
                         font-weight: 600;
-                        text-align: end;
                         padding-right: 20px;
-                        padding-bottom: 10px;
-                        width: 20px;
                         margin-left: auto;
                         margin-top: auto;
-                        position: relative;
-                        bottom: 25px;
-                        right: 25px;
-                        transition: all 400ms ease-in-out;
-                        .mainStartersCard:hover &, .mainDishesCard:hover &, .mainDessertsCard:hover &{
-                            right: 89px;
-                        }
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        width: 20px;
+                        z-index: 1;
+                        transition: right 400ms 100ms;
+                    }
+                    &CheckWrapper{
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: center;
+                        height: 100%;
+                        position: absolute;
+                        width: 25%;
+                        top: 0;
+                        right:0;
+                        transition: transform 300ms, opacity 400ms 100ms;
+                        background-color: $colour-bannew;
+                        transform: translate3d(100%, 0, 0);
+                        opacity: 0;
+                        z-index: 2;
                     }
                     &Check{
-                        position: relative;
-                        right: 0px;
-                        top: 0px;
-                        background-color: #99e2d0;
-                        color: #ffffff;
-                        height: 100%;
-                        width: 4rem;
-                        display: block;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 0 20px 20px 0;
-                        transition: all 400ms ease-in-out;
-                        transform: translateX(100%);
-                        .mainStartersCard:hover &, .mainDishesCard:hover &, .mainDishesCard:hover &{
-                            transform: translateX(0);
-                            width: 4rem;
-                        }
+                        flex-grow: 1;
+                        padding: 1rem;
+                        opacity: 0;
+                        transition: opacity 500ms 100ms;
+                        transition: transform 400ms 100ms;
+                        transform: rotate(-360deg);
+                        background-color: $colour-bannew;
+                        z-index: 3;
                         &Icon{
                             font-size: 1.5rem;
-                            transform: rotate(-360deg);
-                            transition: all 400ms 100ms ease;
                             opacity: 0;
-                            .mainStartersCard:hover &, .mainDishesCard:hover &, .mainDishesCard:hover &{
-                                transform: rotate(0);
-                                opacity: 1;
-                            }
-                        }
-                    }
-                    &:hover{
-                        cursor: pointer;
-                        filter: brightness(1.25);
-                        box-shadow: 0 0 25px #0000003E;
-                        max-width: 316px;
-                    }
+                            transition: opacity 500ms 100ms;
+                            z-index: 4;
+                            color: $colour-white;
+                        }           
+                    } 
                 }
-            } 
+            }    
         }
     }
     &Command{
@@ -297,17 +309,6 @@
             cursor: pointer;
             filter: brightness(1.25);
             box-shadow: 0 0 25px #0000003E;
-        }
-    }
-}
-@media screen and (min-width: 426px) and (max-width: 768px){
-    .main, .main2{
-        &Starters, &Dishes, &Desserts{
-            &CardWrapper{
-                &2{
-                    .mainStartersCard, .mainDishesCard, .mainDessertsCard{ max-width: 730px }
-                }
-            }
         }
     }
 }
@@ -346,5 +347,13 @@
     100% {
 	    transform: translateY(0);
 	    opacity: 1;
+    }
+}
+@keyframes fillin {
+    0%{ 
+        color: #f6f6f6;
+    }
+    100%{
+        color: linear-gradient(170deg, $colour-heart-bot 0%, $colour-heart-top 100%);
     }
 }
