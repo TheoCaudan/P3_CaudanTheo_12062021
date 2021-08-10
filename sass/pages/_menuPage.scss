@@ -176,7 +176,9 @@
             &2{
                 display: grid;
                 grid-template-columns: repeat(auto-fit, 100%);
-                gap: 10px;                
+                gap: 10px; 
+                margin-left: 20px;
+                margin-right: 20px;              
                 .mainStartersCard, .mainDishesCard, .mainDessertsCard{
                     position: relative;
                     height: 70px;
@@ -189,10 +191,11 @@
                         box-shadow: 0 0 16px #0000003E;
                         cursor: pointer;
                         filter: brightness(1.25);
-                        .mainStartersCardCheckWrapper, .mainDishesCardCheckWrapper, .mainDessertsCardCheckWrapper{
+                        .mainStartersCardCheckWrapper, .mainDishesCardCheckWrapper, .mainDessertsCardCheckWrapper,
+                        .mainStartersCardCheckWrapper2{
                             transform: translate3d(0, 0, 0);
                             opacity: 1;                            
-                            .mainStartersCardCheck{
+                            .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
                                 transform: rotate(0);
                                 opacity: 1;
                                 &Icon{
