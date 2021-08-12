@@ -564,21 +564,52 @@ h1 {
 }
 .mainHeaderGrade, .main2HeaderGrade {
   position: relative;
-  padding-right: 20px;
-  padding-top: 20px;
-  height: 22px;
-  width: 22px;
-  top: -65px;
+  height: 20px;
+  width: 20px;
+  top: -45px;
   left: 90%;
   transform: scale(1);
   transition: transform 400ms ease-out;
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+.mainHeaderGradeFull .mainHeaderGradeEmpty, .main2HeaderGradeFull .mainHeaderGradeEmpty {
+  opacity: 1;
+  transition: opacity 400ms;
 }
 .mainHeaderGrade:hover, .mainHeaderGrade:focus, .main2HeaderGrade:hover, .main2HeaderGrade:focus {
   cursor: pointer;
   transform: scale(1.1);
 }
+.mainHeaderGrade:hover .mainHeaderGradeFull, .mainHeaderGrade:focus .mainHeaderGradeFull, .main2HeaderGrade:hover .mainHeaderGradeFull, .main2HeaderGrade:focus .mainHeaderGradeFull {
+  animation: spin 400ms;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  opacity: 1;
+}
+.mainHeaderGrade:hover .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull, .mainHeaderGrade:focus .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull, .main2HeaderGrade:hover .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull, .main2HeaderGrade:focus .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull {
+  font-weight: 900;
+  background: linear-gradient(170deg, #e471da 0%, #b361db 100%);
+}
+.mainHeaderGrade:hover .mainHeaderGradeEmpty, .mainHeaderGrade:focus .mainHeaderGradeEmpty, .main2HeaderGrade:hover .mainHeaderGradeEmpty, .main2HeaderGrade:focus .mainHeaderGradeEmpty {
+  opacity: 0;
+}
 .mainHeaderGradeHeart, .main2HeaderGradeHeart {
-  text-shadow: 0 0 4px 4px #000;
+  opacity: 1;
+  transition: opacity 400ms;
+  position: relative;
+}
+.mainHeaderGradeHeartFull, .main2HeaderGradeHeartFull {
+  z-index: 1;
+  transition: opacity 400ms 100ms;
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  color: #e471da;
+  width: 20px;
+  height: 20px;
+  transition: width 400ms 100ms;
+  transition: height 400ms 100ms;
 }
 .mainStartersTitle1::before, .main2StartersTitle1::before {
   content: "";
@@ -903,21 +934,18 @@ h1 {
 }
 @keyframes fillin {
   0% {
-    color: #f6f6f6;
+    background: #f6f6f6;
   }
   100% {
-    color: linear-gradient(170deg, #e471da 0%, #b361db 100%);
+    background: linear-gradient(170deg, #e471da 0%, #b361db 100%);
   }
 }
-@keyframes animRoule {
+@keyframes spin {
   0% {
-    transform: rotate(360deg);
-  }
-  50% {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 
