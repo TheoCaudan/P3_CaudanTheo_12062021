@@ -93,6 +93,41 @@ h1 {
     opacity: 1;
   }
 }
+/*.mainHeaderGrade{
+	&Heart{
+		cursor: pointer;
+		position: absolute;
+		z-index: 2;
+		font-size: 1rem;
+		opacity: 1;
+		transition: opacity 3s ease-in-out;
+		&:hover {
+			opacity: 0;
+			& + .mainHeaderGradeFull::after {
+				transform: rotate(500deg);
+			}
+		}
+	}
+	&Full {
+		font-size: 1rem;
+		background-image: linear-gradient(170deg, $colour-heart-bot 0%, $colour-heart-top 100%);
+		background-clip: text;
+        -webkit-background-clip: text;
+		color: transparent;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		&::after {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			background: #f6f6f6;
+			border-radius: 35%;
+			transform: rotate(0deg);
+			transition: transform 5.5s ease-out;
+		}
+	}
+}*/
 .search {
   display: flex;
   align-items: center;
@@ -564,52 +599,46 @@ h1 {
 }
 .mainHeaderGrade, .main2HeaderGrade {
   position: relative;
-  height: 20px;
-  width: 20px;
   top: -45px;
   left: 90%;
-  transform: scale(1);
   transition: transform 400ms ease-out;
-  transform: translate3d(0, 0, 0);
   overflow: hidden;
-}
-.mainHeaderGradeFull .mainHeaderGradeEmpty, .main2HeaderGradeFull .mainHeaderGradeEmpty {
-  opacity: 1;
-  transition: opacity 400ms;
 }
 .mainHeaderGrade:hover, .mainHeaderGrade:focus, .main2HeaderGrade:hover, .main2HeaderGrade:focus {
   cursor: pointer;
-  transform: scale(1.1);
 }
 .mainHeaderGrade:hover .mainHeaderGradeFull, .mainHeaderGrade:focus .mainHeaderGradeFull, .main2HeaderGrade:hover .mainHeaderGradeFull, .main2HeaderGrade:focus .mainHeaderGradeFull {
-  animation: spin 400ms;
-  animation-iteration-count: 2;
-  animation-timing-function: linear;
   opacity: 1;
 }
-.mainHeaderGrade:hover .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull, .mainHeaderGrade:focus .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull, .main2HeaderGrade:hover .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull, .main2HeaderGrade:focus .mainHeaderGradeFull .mainHeaderTitleGradeHeartFull {
-  font-weight: 900;
-  background: linear-gradient(170deg, #e471da 0%, #b361db 100%);
+.mainHeaderGrade:hover .mainHeaderGradeFull .mainHeaderGradeHeartFull, .mainHeaderGrade:focus .mainHeaderGradeFull .mainHeaderGradeHeartFull, .main2HeaderGrade:hover .mainHeaderGradeFull .mainHeaderGradeHeartFull, .main2HeaderGrade:focus .mainHeaderGradeFull .mainHeaderGradeHeartFull {
+  color: transparent;
 }
-.mainHeaderGrade:hover .mainHeaderGradeEmpty, .mainHeaderGrade:focus .mainHeaderGradeEmpty, .main2HeaderGrade:hover .mainHeaderGradeEmpty, .main2HeaderGrade:focus .mainHeaderGradeEmpty {
+.mainHeaderGrade:hover .mainHeaderGradeFull .mainHeaderGradeEmpty, .mainHeaderGrade:focus .mainHeaderGradeFull .mainHeaderGradeEmpty, .main2HeaderGrade:hover .mainHeaderGradeFull .mainHeaderGradeEmpty, .main2HeaderGrade:focus .mainHeaderGradeFull .mainHeaderGradeEmpty {
   opacity: 0;
 }
 .mainHeaderGradeHeart, .main2HeaderGradeHeart {
   opacity: 1;
   transition: opacity 400ms;
-  position: relative;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1rem;
+  opacity: 1;
+  transition: opacity 3000ms ease-in-out;
 }
 .mainHeaderGradeHeartFull, .main2HeaderGradeHeartFull {
   z-index: 1;
   transition: opacity 400ms 100ms;
-  position: absolute;
-  top: -1px;
-  right: 2px;
-  color: #e471da;
-  width: 20px;
-  height: 20px;
-  transition: width 400ms 100ms;
-  transition: height 400ms 100ms;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  background-image: linear-gradient(170deg, #e471da 0%, #b361db 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 400ms 100ms ease-in-out;
+  font-size: 1rem;
+  color: #f6f6f6;
+  overflow: hidden;
 }
 .mainStartersTitle1::before, .main2StartersTitle1::before {
   content: "";
