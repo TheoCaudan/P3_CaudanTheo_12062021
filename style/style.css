@@ -93,41 +93,6 @@ h1 {
     opacity: 1;
   }
 }
-/*.mainHeaderGrade{
-	&Heart{
-		cursor: pointer;
-		position: absolute;
-		z-index: 2;
-		font-size: 1rem;
-		opacity: 1;
-		transition: opacity 3s ease-in-out;
-		&:hover {
-			opacity: 0;
-			& + .mainHeaderGradeFull::after {
-				transform: rotate(500deg);
-			}
-		}
-	}
-	&Full {
-		font-size: 1rem;
-		background-image: linear-gradient(170deg, $colour-heart-bot 0%, $colour-heart-top 100%);
-		background-clip: text;
-        -webkit-background-clip: text;
-		color: transparent;
-		position: relative;
-		overflow: hidden;
-		z-index: 1;
-		&::after {
-			content: "";
-			z-index: -1;
-			position: absolute;
-			background: #f6f6f6;
-			border-radius: 35%;
-			transform: rotate(0deg);
-			transition: transform 5.5s ease-out;
-		}
-	}
-}*/
 .search {
   display: flex;
   align-items: center;
@@ -248,7 +213,8 @@ h1 {
 }
 .exploreTitle {
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .exploreText {
   margin-bottom: 20px;
@@ -330,6 +296,7 @@ h1 {
   margin-top: 20px;
   position: relative;
   right: 10px;
+  padding-top: 2px;
 }
 .explanationsStep1Icon, .explanationsStep2Icon, .explanationsStep3Icon {
   padding-left: 10px;
@@ -437,6 +404,38 @@ h1 {
   bottom: 60px;
   height: 20px;
   width: 20px;
+  transition: transform 400ms ease-out;
+  overflow: hidden;
+}
+.restaurantsMainCardGrade:hover, .restaurantsMainCardGrade:focus {
+  cursor: pointer;
+}
+.restaurantsMainCardGrade:hover .restaurantsMainCardGradeFull, .restaurantsMainCardGrade:focus .restaurantsMainCardGradeFull {
+  opacity: 1;
+}
+.restaurantsMainCardGrade:hover .restaurantsMainCardGradeFull .restaurantsMainCardGradeHeart, .restaurantsMainCardGrade:focus .restaurantsMainCardGradeFull .restaurantsMainCardGradeHeart {
+  opacity: 0;
+}
+.restaurantsMainCardGrade:hover .restaurantsMainCardGradeFull .restaurantsMainCardGradeHeartFull, .restaurantsMainCardGrade:focus .restaurantsMainCardGradeFull .restaurantsMainCardGradeHeartFull {
+  color: transparent;
+}
+.restaurantsMainCardGradeEmpty .restaurantsMainCardGradeHeart {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 3000ms ease-in-out;
+}
+.restaurantsMainCardGradeFull .restaurantsMainCardGradeHeartFull {
+  z-index: 10;
+  transition: opacity 400ms 100ms;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  background-image: linear-gradient(170deg, #e471da 0%, #b361db 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 400ms 100ms ease-in-out;
+  color: #fff;
+  overflow: hidden;
 }
 .restaurantsMainCardNew {
   background-color: #99e2d0;
@@ -617,8 +616,6 @@ h1 {
   opacity: 0;
 }
 .mainHeaderGradeHeart, .main2HeaderGradeHeart {
-  opacity: 1;
-  transition: opacity 400ms;
   position: absolute;
   cursor: pointer;
   z-index: 2;
