@@ -24,7 +24,7 @@
             left: 90%;
             transition: transform 400ms ease-out; 
             overflow: hidden;
-            
+            width: 20px;
             &:hover, &:focus{
                 cursor: pointer;
                 .mainHeaderGradeFull{
@@ -208,7 +208,7 @@
                     overflow: hidden;
                     box-shadow: 0 0 14px #0000002E;  
                     border-radius: 20px;
-                    margin-bottom: 20px;
+                    margin-bottom: 50px;
                     &:hover, &:focus{
                         box-shadow: 0 0 16px #0000003E;
                         cursor: pointer;
@@ -232,6 +232,12 @@
                         }
                         .mainStartersCardTitle, .mainDishesCardTitle, .mainDessertsCardTitle{
                             transform: translate3d(0, 0, 0);
+                            max-width: 74%;
+                            text-overflow: ellipsis;
+                        }
+                        .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc{
+                            max-width: 64%;
+                            text-overflow: ellipsis;
                         }
                     }
                     &Title{
@@ -245,18 +251,20 @@
                         transition: transform 300ms;
                         transform: translate3d(0, 0, 0);
                         max-width: 90%;
+                        transition: max-width 400ms 100ms;
                     }
                     &Desc{
                         font-family: "roboto";
                         font-weight: 200;
                         overflow: hidden;
-                        white-space: wrap;
                         text-overflow: ellipsis;
                         font-size: small;
                         max-width: 74%;
                         position: absolute;
                         z-index: 1;
                         padding-left: 10px;
+                        max-height: 15px;
+                        transition: max-width 400ms 100ms;
                     }
                     &Price{
                         display: block;
@@ -386,6 +394,7 @@
             align-items: center;
 	        grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: "starters dishes desserts";
+            align-items: baseline;
         }
         &Starters{
             grid-area: starters;
