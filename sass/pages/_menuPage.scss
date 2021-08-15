@@ -217,12 +217,13 @@
                             border: 2px solid $colour-bannew;
                             filter: brightness(0.80);
                             transform: translate3d(0, 0, 0);
-                            opacity: 1;                            
+                            opacity: 1;                         
                             .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
                                 transform: translate3d(25%, 0, 0);
                                 opacity: 1;
+                                transition: all 400ms 100ms ease;
                                 &Icon{
-                                    animation: animRoule 800ms 100ms ease;
+                                    animation: spin 800ms 100ms ease;
                                     opacity: 1;
                                 }
                             }
@@ -238,6 +239,19 @@
                         .mainStartersCardDesc, .mainDishesCardDesc, .mainDessertsCardDesc{
                             max-width: 64%;
                             text-overflow: ellipsis;
+                        }
+                    }
+                    &:not(:hover){
+                        .mainStartersCardCheckWrapper, .mainDishesCardCheckWrapper, .mainDessertsCardCheckWrapper{
+                            transform: translate3d(0, 0, 0);
+                            transition: transform 400ms ease;
+                            transition: opacity 100ms 400ms;
+                            .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
+                                transform: translate3d(100%, 0, 0);
+                                &Icon{
+                                    animation: unspin 800ms 100ms ease;
+                                }
+                            }
                         }
                     }
                     &Title{
@@ -313,6 +327,7 @@
                             transition: opacity 500ms 100ms;
                             z-index: 4;
                             color: $colour-white;
+                            animation: unspin 800ms 100ms ease;
                         }           
                     } 
                 }
@@ -415,7 +430,7 @@
         }
     }
 }
-@keyframes menuAnimation {
+@keyframes menuAnimation{
     0% {
 	    transform: translateY(100%);
 	    opacity: 0;
@@ -425,7 +440,7 @@
 	    opacity: 1;
     }
 }
-@keyframes fillin {
+@keyframes fillin{
     0%{ 
         background: #f6f6f6;
     }
@@ -433,11 +448,20 @@
         background: linear-gradient(170deg, $colour-heart-bot 0%, $colour-heart-top 100%);
     }
 }
-@keyframes spin {
+@keyframes spin{
     0%{
-        transform: rotate(0deg);
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes unspin{
+    0%{
+        transform: rotate(0);
     }
     100%{
         transform: rotate(360deg);
     }
+
 }
