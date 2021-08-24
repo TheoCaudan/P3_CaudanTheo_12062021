@@ -244,7 +244,7 @@
                     &:not(:hover){
                         .mainStartersCardCheckWrapper, .mainDishesCardCheckWrapper, .mainDessertsCardCheckWrapper{
                             transform: translate3d(0, 0, 0);
-                            transition: transform 400ms ease;
+                            transition: transform 400ms 400ms ease;
                             transition: opacity 100ms 400ms;
                             .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
                                 transform: translate3d(100%, 0, 0);
@@ -293,7 +293,10 @@
                         right: 10px;
                         width: 20px;
                         z-index: 1;
-                        transition: right 400ms 100ms;
+                        transition: right 400ms 400ms;
+                        &:not(:focus), &:not(:hover){
+                            right: 10px;
+                        }
                     }
                     &CheckWrapper{
                         display: flex;
@@ -323,11 +326,9 @@
                         z-index: 3;
                         &Icon{
                             font-size: 1.5rem;
-                            opacity: 0;
-                            transition: opacity 500ms 100ms;
+                            transition: transform 500ms opacity 500ms 100ms;
                             z-index: 4;
                             color: $colour-white;
-                            animation: unspin 800ms 100ms ease;
                         }           
                     } 
                 }
