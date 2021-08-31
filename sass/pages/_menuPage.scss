@@ -24,7 +24,8 @@
             left: 90%;
             transition: transform 400ms ease-out; 
             overflow: hidden;
-            width: 20px;
+            width: 24px;
+            height: 24px;
             &:hover, &:focus{
                 cursor: pointer;
                 .mainHeaderGradeFull{
