@@ -891,7 +891,8 @@ h1 {
 }
 .mainStartersCardWrapper2 .mainStartersCardCheckIcon, .mainStartersCardWrapper2 .mainDishesCardCheckIcon, .mainStartersCardWrapper2 .mainDessertsCardCheckIcon, .mainDishesCardWrapper2 .mainStartersCardCheckIcon, .mainDishesCardWrapper2 .mainDishesCardCheckIcon, .mainDishesCardWrapper2 .mainDessertsCardCheckIcon, .mainDessertsCardWrapper2 .mainStartersCardCheckIcon, .mainDessertsCardWrapper2 .mainDishesCardCheckIcon, .mainDessertsCardWrapper2 .mainDessertsCardCheckIcon, .main2StartersCardWrapper2 .mainStartersCardCheckIcon, .main2StartersCardWrapper2 .mainDishesCardCheckIcon, .main2StartersCardWrapper2 .mainDessertsCardCheckIcon, .main2DishesCardWrapper2 .mainStartersCardCheckIcon, .main2DishesCardWrapper2 .mainDishesCardCheckIcon, .main2DishesCardWrapper2 .mainDessertsCardCheckIcon, .main2DessertsCardWrapper2 .mainStartersCardCheckIcon, .main2DessertsCardWrapper2 .mainDishesCardCheckIcon, .main2DessertsCardWrapper2 .mainDessertsCardCheckIcon {
   font-size: 1.5rem;
-  transition: transform 800ms 100ms ease opacity 500ms;
+  transition: transform 800ms 100ms ease;
+  transition: opacity 500ms;
   z-index: 4;
   color: #fff;
   opacity: 1;

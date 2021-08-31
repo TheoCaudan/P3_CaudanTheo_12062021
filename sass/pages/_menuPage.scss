@@ -319,7 +319,8 @@
                         }
                         &Icon{
                             font-size: 1.5rem;
-                            transition: transform 800ms 100ms ease opacity 500ms;
+                            transition: transform 800ms 100ms ease;
+                            transition: opacity 500ms;
                             z-index: 4;
                             color: $colour-white;
                             opacity: 1;
