@@ -223,7 +223,7 @@
                                 opacity: 1;
                                 transition: all 400ms 100ms ease;
                                 &Icon{
-                                    animation: spin 800ms 100ms ease;
+                                    animation: spin 600ms 400ms;
                                     opacity: 1;
                                 }
                             }
@@ -382,7 +382,12 @@
         }
     }
     .main{ height: 1500px }
-    .main2{ height: 1600px }    
+    .main2{ height: 1600px }
+    .main{
+        &Header{
+            &Grade{ left: 85% }
+        }
+    }    
 }
 @media screen and (min-width: 426px) and (max-width: 768px){
     .main{ height: 1500px }
@@ -403,6 +408,9 @@
 @media screen and (min-width: 769px) and (max-width: 2560px){
     @media screen and (min-width: 1024px) and (max-width: 1439px){
         .main{
+            &Header{
+                &Grade{ left: 93% }
+            }
             &Menu{
                 .mainStarters, .mainDishes, .mainDesserts{
                     &CardWrapper{
@@ -419,6 +427,13 @@
                 }
             }
         }    
+    }
+    @media screen and (min-width: 1440px){
+        .main{
+            &Header{
+                &Grade{ left: 95% }
+            }
+        }
     }
     .main, .main2{
         &Menu{
