@@ -420,12 +420,14 @@ h1 {
   color: transparent;
 }
 .restaurantsMainCardGradeEmpty .restaurantsMainCardGradeHeart {
+  position: absolute;
+  cursor: pointer;
   opacity: 1;
   z-index: 2;
   transition: opacity 3000ms ease-in-out;
 }
 .restaurantsMainCardGradeFull .restaurantsMainCardGradeHeartFull {
-  z-index: 10;
+  z-index: 1;
   transition: opacity 400ms 100ms;
   position: relative;
   top: 0px;
@@ -620,7 +622,7 @@ h1 {
   position: absolute;
   cursor: pointer;
   z-index: 2;
-  font-size: 1rem;
+  font-size: 22px;
   opacity: 1;
   transition: opacity 3000ms ease-in-out;
 }
@@ -634,7 +636,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   transition: color 400ms 100ms ease-in-out;
-  font-size: 1rem;
+  font-size: 22px;
   color: #f6f6f6;
   overflow: hidden;
 }
@@ -897,7 +899,7 @@ h1 {
 }
 .mainCommand, .main2Command {
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -929,8 +931,20 @@ h1 {
   .mainMenu .mainStartersCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .mainMenu .mainStartersCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .mainMenu .mainStartersCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .mainMenu .mainStartersCardWrapper2 .mainStartersCard:focus .mainStartersCardCheck, .mainMenu .mainStartersCardWrapper2 .mainStartersCard:focus .mainDishesCardCheck, .mainMenu .mainStartersCardWrapper2 .mainStartersCard:focus .mainDessertsCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDishesCard:focus .mainStartersCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDishesCard:focus .mainDishesCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDishesCard:focus .mainDessertsCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDessertsCard:focus .mainStartersCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDessertsCard:focus .mainDishesCardCheck, .mainMenu .mainStartersCardWrapper2 .mainDessertsCard:focus .mainDessertsCardCheck, .mainMenu .mainDishesCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .mainMenu .mainDishesCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .mainMenu .mainDishesCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .mainMenu .mainDishesCardWrapper2 .mainStartersCard:focus .mainStartersCardCheck, .mainMenu .mainDishesCardWrapper2 .mainStartersCard:focus .mainDishesCardCheck, .mainMenu .mainDishesCardWrapper2 .mainStartersCard:focus .mainDessertsCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDishesCard:focus .mainStartersCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDishesCard:focus .mainDishesCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDishesCard:focus .mainDessertsCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDessertsCard:focus .mainStartersCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDessertsCard:focus .mainDishesCardCheck, .mainMenu .mainDishesCardWrapper2 .mainDessertsCard:focus .mainDessertsCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainStartersCard:focus .mainStartersCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainStartersCard:focus .mainDishesCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainStartersCard:focus .mainDessertsCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDishesCard:focus .mainStartersCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDishesCard:focus .mainDishesCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDishesCard:focus .mainDessertsCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDessertsCard:focus .mainStartersCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDessertsCard:focus .mainDishesCardCheck, .mainMenu .mainDessertsCardWrapper2 .mainDessertsCard:focus .mainDessertsCardCheck, .main2Menu .mainStartersCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .main2Menu .mainStartersCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .main2Menu .mainStartersCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .main2Menu .mainStartersCardWrapper2 .mainStartersCard:focus .mainStartersCardCheck, .main2Menu .mainStartersCardWrapper2 .mainStartersCard:focus .mainDishesCardCheck, .main2Menu .mainStartersCardWrapper2 .mainStartersCard:focus .mainDessertsCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDishesCard:focus .mainStartersCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDishesCard:focus .mainDishesCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDishesCard:focus .mainDessertsCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDessertsCard:focus .mainStartersCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDessertsCard:focus .mainDishesCardCheck, .main2Menu .mainStartersCardWrapper2 .mainDessertsCard:focus .mainDessertsCardCheck, .main2Menu .mainDishesCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .main2Menu .mainDishesCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .main2Menu .mainDishesCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .main2Menu .mainDishesCardWrapper2 .mainStartersCard:focus .mainStartersCardCheck, .main2Menu .mainDishesCardWrapper2 .mainStartersCard:focus .mainDishesCardCheck, .main2Menu .mainDishesCardWrapper2 .mainStartersCard:focus .mainDessertsCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDishesCard:focus .mainStartersCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDishesCard:focus .mainDishesCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDishesCard:focus .mainDessertsCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDessertsCard:focus .mainStartersCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDessertsCard:focus .mainDishesCardCheck, .main2Menu .mainDishesCardWrapper2 .mainDessertsCard:focus .mainDessertsCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainStartersCard:hover .mainStartersCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDishesCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainStartersCard:hover .mainDessertsCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainStartersCard:focus .mainStartersCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainStartersCard:focus .mainDishesCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainStartersCard:focus .mainDessertsCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDishesCard:hover .mainStartersCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDishesCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDishesCard:hover .mainDessertsCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDishesCard:focus .mainStartersCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDishesCard:focus .mainDishesCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDishesCard:focus .mainDessertsCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainStartersCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDishesCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDessertsCard:hover .mainDessertsCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDessertsCard:focus .mainStartersCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDessertsCard:focus .mainDishesCardCheck, .main2Menu .mainDessertsCardWrapper2 .mainDessertsCard:focus .mainDessertsCardCheck {
     transform: translate3d(10%, 0, 0);
   }
+
+  .main {
+    height: 1500px;
+  }
+
+  .main2 {
+    height: 1600px;
+  }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  .main {
+    height: 1500px;
+  }
+
   .mainStartersCardWrapper2 .mainStartersCardCheckWrapper, .mainStartersCardWrapper2 .mainDishesCardCheckWrapper, .mainStartersCardWrapper2 .mainDessertsCardCheckWrapper, .mainDishesCardWrapper2 .mainStartersCardCheckWrapper, .mainDishesCardWrapper2 .mainDishesCardCheckWrapper, .mainDishesCardWrapper2 .mainDessertsCardCheckWrapper, .mainDessertsCardWrapper2 .mainStartersCardCheckWrapper, .mainDessertsCardWrapper2 .mainDishesCardCheckWrapper, .mainDessertsCardWrapper2 .mainDessertsCardCheckWrapper, .main2StartersCardWrapper2 .mainStartersCardCheckWrapper, .main2StartersCardWrapper2 .mainDishesCardCheckWrapper, .main2StartersCardWrapper2 .mainDessertsCardCheckWrapper, .main2DishesCardWrapper2 .mainStartersCardCheckWrapper, .main2DishesCardWrapper2 .mainDishesCardCheckWrapper, .main2DishesCardWrapper2 .mainDessertsCardCheckWrapper, .main2DessertsCardWrapper2 .mainStartersCardCheckWrapper, .main2DessertsCardWrapper2 .mainDishesCardCheckWrapper, .main2DessertsCardWrapper2 .mainDessertsCardCheckWrapper {
     width: 20%;
   }
@@ -996,7 +1010,7 @@ h1 {
 }
 @keyframes spin {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
   100% {
     transform: rotate(0);
