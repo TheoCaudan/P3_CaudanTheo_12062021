@@ -400,6 +400,9 @@
                         &CheckWrapper{
                             width: 20%;
                         }
+                        &Check{
+                            padding-right: 75px;
+                        }
                     }
                 }
             }
@@ -407,6 +410,23 @@
     }
 }
 @media screen and (min-width: 769px) and (max-width: 2560px){
+    @media screen and (min-width: 769px) and (max-width: 1023px){
+        .main{
+            &Menu{
+                .mainStarters, .mainDishes, .mainDesserts{
+                    &CardWrapper{
+                        &2{
+                            .mainStartersCard, .mainDishesCard, .mainDessertsCard{
+                                &Check{
+                                    padding-right: 75px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media screen and (min-width: 1024px) and (max-width: 1439px){
         .main{
             &Header{
@@ -417,6 +437,9 @@
                     &CardWrapper{
                         &2{
                             .mainStartersCard, .mainDishesCard, .mainDessertsCard{
+                                &Check{ 
+                                    padding-left: 24%;
+                                }
                                 &:hover, &:focus{
                                     .mainStartersCardCheck, .mainDishesCardCheck, .mainDessertsCardCheck{
                                         transform: translate3d(10%, 0, 0);
